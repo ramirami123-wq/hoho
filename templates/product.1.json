@@ -54,7 +54,7 @@
         "custom_liquid_H9DXEK": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n\n<span style=\"font-weight: bold;\">✨ Cordless & Rechargeable</span> – Style your hair anywhere without needing an outlet.<br><br>\n\n<span style=\"font-weight: bold;\">🔥 Fast, Even Heating</span> –  Advanced ceramic technology smooths hair quickly with less frizz.<br><br>\n\n<span style=\"font-weight: bold;\">🌡️ Adjustable Heat Settings</span> – Suitable for fine, thick, curly, or treated hair.<br><br>\n\n<span style=\"font-weight: bold;\">💫 Smooth, Tangle-Free Results</span> –  Glides gently through hair for a sleek, shiny finish.\n\n</div>"
+            "custom_liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n\n<span style=\"font-weight: bold;\">🔥 Soothing Heat Therapy</span> – Delivers comforting warmth to help ease period cramps and abdominal discomfort.<br><br>\n\n<span style=\"font-weight: bold;\">💆 Relaxing Massage Function</span> – Gentle vibration massage helps relax muscles and provides additional comfort during your period.<br><br>\n\n<span style=\"font-weight: bold;\">🔋 Cordless & Rechargeable</span> – Lightweight and portable design lets you enjoy relief at home, work, school, or on the go.<br><br>\n\n<span style=\"font-weight: bold;\">🌡️ Adjustable Heat Levels</span> – Choose your preferred temperature setting for personalized comfort whenever you need it.<br><br>\n\n<span style=\"font-weight: bold;\">✨ Comfortable & Wearable</span> – Ergonomic hands-free design fits comfortably around your waist so you can stay active throughout the day.\n\n</div>"
           }
         },
         "variant_picker": {
@@ -134,55 +134,19 @@
     "scrolling_promotion_ehCeVr": {
       "type": "scrolling-promotion",
       "blocks": {
-        "announcement_mzFNjh": {
-          "type": "announcement",
-          "settings": {
-            "icon": "none",
-            "icon_size": "medium",
-            "custom_icon": "",
-            "text": "Welcome to our store",
-            "text_size": 20,
-            "link": ""
-          }
-        },
-        "announcement_ApW3n3": {
-          "type": "announcement",
-          "settings": {
-            "icon": "none",
-            "icon_size": "medium",
-            "custom_icon": "",
-            "text": "Welcome to our store",
-            "text_size": 20,
-            "link": ""
-          }
-        },
-        "announcement_ppnx6U": {
-          "type": "announcement",
-          "settings": {
-            "icon": "none",
-            "icon_size": "medium",
-            "custom_icon": "",
-            "text": "Welcome to our store",
-            "text_size": 20,
-            "link": ""
-          }
-        },
         "announcement_n6PRJz": {
           "type": "announcement",
           "settings": {
             "icon": "none",
             "icon_size": "medium",
             "custom_icon": "",
-            "text": "Welcome to our store",
+            "text": "Instant comfort when I need it most.",
             "text_size": 20,
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement_mzFNjh",
-        "announcement_ApW3n3",
-        "announcement_ppnx6U",
         "announcement_n6PRJz"
       ],
       "name": "t:sections.scrolling-promotion.presets.name",
@@ -230,7 +194,7 @@
         "heading_r7Wwa6": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Fast Relief, Anytime",
             "heading_size": "h1",
             "heading_tag": "h2"
           }
@@ -238,7 +202,7 @@
         "text_txn6Gr": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Experience soothing heat and gentle massage designed to help ease period discomfort. Wear it comfortably throughout your day and enjoy relief wherever you are.</p><h3></h3>",
             "text_size": "typeset2",
             "secondary_color": false
           }
@@ -250,6 +214,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
+        "image": "shopify://shop_images/1759344654_phpqfprhlgfmdss1t1w5ia.jpg",
         "image_position": "center center",
         "layout": "image_first",
         "text_box_position": "middle",
@@ -263,6 +228,7 @@
         "mobile_text_alignment": "left",
         "mobile_image_ratio": "auto",
         "enable_video_looping": false,
+        "video_url": "",
         "use_custom_colors": false,
         "colors_button_label": "#ffffff",
         "colors_button_background": "#1a1b18",
@@ -276,55 +242,19 @@
     "scrolling_promotion_aBKVKx": {
       "type": "scrolling-promotion",
       "blocks": {
-        "announcement_CcCWXa": {
-          "type": "announcement",
-          "settings": {
-            "icon": "none",
-            "icon_size": "medium",
-            "custom_icon": "",
-            "text": "Welcome to our store",
-            "text_size": 20,
-            "link": ""
-          }
-        },
-        "announcement_7icg6c": {
-          "type": "announcement",
-          "settings": {
-            "icon": "none",
-            "icon_size": "medium",
-            "custom_icon": "",
-            "text": "Welcome to our store",
-            "text_size": 20,
-            "link": ""
-          }
-        },
-        "announcement_idEiNG": {
-          "type": "announcement",
-          "settings": {
-            "icon": "none",
-            "icon_size": "medium",
-            "custom_icon": "",
-            "text": "Welcome to our store",
-            "text_size": 20,
-            "link": ""
-          }
-        },
         "announcement_fPYPPb": {
           "type": "announcement",
           "settings": {
             "icon": "none",
             "icon_size": "medium",
             "custom_icon": "",
-            "text": "Welcome to our store",
+            "text": "A lifesaver during my period",
             "text_size": 20,
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement_CcCWXa",
-        "announcement_7icg6c",
-        "announcement_idEiNG",
         "announcement_fPYPPb"
       ],
       "name": "t:sections.scrolling-promotion.presets.name",
@@ -347,7 +277,7 @@
         "heading_NVjMGc": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Stay Comfortable & Active",
             "heading_size": "h1",
             "heading_tag": "h2"
           }
@@ -355,7 +285,7 @@
         "text_xqVGMr": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Don't let cramps slow you down. Our portable, hands-free design helps you stay focused, productive, and comfortable whether you're at work, school, or relaxing at home.</p>",
             "text_size": "typeset2",
             "secondary_color": false
           }
@@ -367,6 +297,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
+        "image": "shopify://shop_images/1759344647_php2pk2dijvcmg20OEv0pV.jpg",
         "image_position": "center center",
         "layout": "image_first",
         "text_box_position": "middle",
@@ -380,6 +311,7 @@
         "mobile_text_alignment": "left",
         "mobile_image_ratio": "auto",
         "enable_video_looping": false,
+        "video_url": "",
         "use_custom_colors": false,
         "colors_button_label": "#ffffff",
         "colors_button_background": "#1a1b18",
@@ -390,50 +322,16 @@
         "padding_bottom": 36
       }
     },
-    "blocks_yBx6Qb": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_c856904_CLXaDR": {
-          "type": "ai_gen_block_c856904",
-          "settings": {
-            "header_col_1": "Feature",
-            "header_col_2": "Benefit",
-            "header_col_3": "Details",
-            "row_1_col_1": "Quality materials",
-            "row_1_col_2": "Long-lasting durability",
-            "row_1_col_3": "Premium construction",
-            "row_2_col_1": "Fast shipping",
-            "row_2_col_2": "Quick delivery",
-            "row_2_col_3": "2-3 business days",
-            "row_3_col_1": "Easy returns",
-            "row_3_col_2": "Hassle-free process",
-            "row_3_col_3": "30-day guarantee",
-            "row_4_col_1": "Customer support",
-            "row_4_col_2": "Expert assistance",
-            "row_4_col_3": "24/7 availability",
-            "header_background": "#f89db5",
-            "header_text_color": "#ffffff",
-            "row_odd_background": "#f3f3f3",
-            "row_even_background": "#ffffff",
-            "cell_text_color": "#212326",
-            "border_color": "#d2d5d9",
-            "table_background": "#ffffff",
-            "desktop_width_percent": 100,
-            "header_font_size": 16,
-            "cell_font_size": 14,
-            "cell_padding": 16,
-            "border_width": 1,
-            "border_radius": 0,
-            "text_alignment": "left"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_c856904_CLXaDR"
-      ],
-      "name": "Benefits table",
-      "settings": {}
+    "custom_liquid_iwMrAE": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div style=\"overflow-x:auto; margin:20px 0;\">\n<table style=\"width:100%; border-collapse:collapse; text-align:center; font-family:Arial, sans-serif; border-radius:12px; overflow:hidden;\">\n    <thead>\n        <tr style=\"background-color:#F89DB5; color:#fff;\">\n            <th style=\"padding:14px; text-align:left;\">Benefits</th>\n            <th style=\"padding:14px;\">Our Pain Relief Pad</th>\n            <th style=\"padding:14px;\">Others</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr style=\"background-color:#FFF5F8;\">\n            <td style=\"padding:12px; text-align:left;\">Soothing Heat Therapy</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n        <tr>\n            <td style=\"padding:12px; text-align:left;\">Massage Function</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n        <tr style=\"background-color:#FFF5F8;\">\n            <td style=\"padding:12px; text-align:left;\">Cordless & Portable</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n        <tr>\n            <td style=\"padding:12px; text-align:left;\">Rechargeable Battery</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n        <tr style=\"background-color:#FFF5F8;\">\n            <td style=\"padding:12px; text-align:left;\">Adjustable Heat Levels</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n        <tr>\n            <td style=\"padding:12px; text-align:left;\">Comfortable Wearable Design</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n    </tbody>\n</table>\n</div>",
+        "full_width": false,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     },
     "faq_7rE8am": {
       "type": "faq",
@@ -472,6 +370,20 @@
     },
     "1771945068374140eb": {
       "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_FGQzhR": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_FGQzhR"
+      ],
       "settings": {
         "include_margins": true,
         "show_divider": false,
@@ -544,7 +456,7 @@
     "image_with_text_9FdKWE",
     "scrolling_promotion_aBKVKx",
     "image_with_text_cgJT49",
-    "blocks_yBx6Qb",
+    "custom_liquid_iwMrAE",
     "faq_7rE8am",
     "1771945068374140eb",
     "guarantees_Yj7NaV",
