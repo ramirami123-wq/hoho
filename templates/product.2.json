@@ -326,7 +326,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<div style=\"overflow-x:auto; margin:20px 0;\">\n<table style=\"width:100%; border-collapse:collapse; text-align:center; font-family:Arial, sans-serif; border-radius:12px; overflow:hidden;\">\n    <thead>\n        <tr style=\"background-color:#F89DB5; color:#fff;\">\n            <th style=\"padding:14px; text-align:left;\">Benefits</th>\n            <th style=\"padding:14px;\">Our Pain Relief Pad</th>\n            <th style=\"padding:14px;\">Others</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr style=\"background-color:#FFF5F8;\">\n            <td style=\"padding:12px; text-align:left;\">Soothing Heat Therapy</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n        <tr>\n            <td style=\"padding:12px; text-align:left;\">Massage Function</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n        <tr style=\"background-color:#FFF5F8;\">\n            <td style=\"padding:12px; text-align:left;\">Cordless & Portable</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n        <tr>\n            <td style=\"padding:12px; text-align:left;\">Rechargeable Battery</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n        <tr style=\"background-color:#FFF5F8;\">\n            <td style=\"padding:12px; text-align:left;\">Adjustable Heat Levels</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n        <tr>\n            <td style=\"padding:12px; text-align:left;\">Comfortable Wearable Design</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n    </tbody>\n</table>\n</div>",
+        "custom_liquid": "<div style=\"overflow-x:auto; margin:20px 0;\">\n<table style=\"width:100%; border-collapse:collapse; text-align:center; font-family:Arial, sans-serif; border-radius:12px; overflow:hidden;\">\n    <thead>\n        <tr style=\"background-color:#F89DB5; color:#fff;\">\n            <th style=\"padding:14px; text-align:left;\">Benefits</th>\n            <th style=\"padding:14px;\">Our Beauty Device</th>\n            <th style=\"padding:14px;\">Others</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr style=\"background-color:#FFF5F8;\">\n            <td style=\"padding:12px; text-align:left;\">LED Light Therapy</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n        <tr>\n            <td style=\"padding:12px; text-align:left;\">Microcurrent Technology</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n        <tr style=\"background-color:#FFF5F8;\">\n            <td style=\"padding:12px; text-align:left;\">Gentle Heating Function</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n        <tr>\n            <td style=\"padding:12px; text-align:left;\">Sonic Vibration Massage</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n        <tr style=\"background-color:#FFF5F8;\">\n            <td style=\"padding:12px; text-align:left;\">Face & Neck Use</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n        <tr>\n            <td style=\"padding:12px; text-align:left;\">Portable Home Spa Design</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n    </tbody>\n</table>\n</div>",
         "full_width": false,
         "show_divider": false,
         "padding_top": 36,
@@ -339,29 +339,29 @@
         "question_yqHqK6": {
           "type": "question",
           "settings": {
-            "title": "How does the Pain Relief Pad work?",
-            "text": "<p>The device combines soothing heat and gentle massage to help relax muscles and provide comfort during period cramps.</p><h3></h3>"
+            "title": "How does the device work?",
+            "text": "<p>It combines LED light therapy, microcurrent technology, gentle heat, and vibration massage to enhance your skincare routine.</p><h3></h3><h3></h3>"
           }
         },
         "question_7XFnnm": {
           "type": "question",
           "settings": {
-            "title": "Can I wear it while moving around?",
-            "text": "<p>Yes! Its lightweight, wearable design allows you to use it while working, studying, traveling, or relaxing at home.</p><h3></h3>"
+            "title": "Can I use it on both my face and neck?",
+            "text": "<p>Yes! The device is specially designed for use on the face, jawline, and neck areas.</p><h3></h3><h3></h3>"
           }
         },
         "question_QTiLt3": {
           "type": "question",
           "settings": {
-            "title": "Is the temperature adjustable?",
-            "text": "<p>Yes, you can choose from multiple heat settings to find the level that feels most comfortable for you.</p><h3></h3>"
+            "title": "How often should I use it?",
+            "text": "<p>For best results, use the device for 5–10 minutes per session, several times per week.</p><h3></h3><h3></h3>"
           }
         },
         "question_HCUMMj": {
           "type": "question",
           "settings": {
-            "title": "Is it safe to use every month?",
-            "text": "<p>Yes, the Pain Relief Pad is designed for regular use and can be used whenever you need extra comfort during your cycle. </p>"
+            "title": "Can I use it with serums or creams?",
+            "text": "<p>Absolutely! It works great with your favorite skincare products and may help improve their absorption.</p><h3></h3>"
           }
         }
       },
