@@ -54,7 +54,7 @@
         "custom_liquid_H9DXEK": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n\n<span style=\"font-weight: bold;\">🔥 Soothing Heat Therapy</span> – Delivers comforting warmth to help ease period cramps and abdominal discomfort.<br><br>\n\n<span style=\"font-weight: bold;\">💆 Relaxing Massage Function</span> – Gentle vibration massage helps relax muscles and provides additional comfort during your period.<br><br>\n\n<span style=\"font-weight: bold;\">🔋 Cordless & Rechargeable</span> – Lightweight and portable design lets you enjoy relief at home, work, school, or on the go.<br><br>\n\n<span style=\"font-weight: bold;\">🌡️ Adjustable Heat Levels</span> – Choose your preferred temperature setting for personalized comfort whenever you need it.<br><br>\n\n<span style=\"font-weight: bold;\">✨ Comfortable & Wearable</span> – Ergonomic hands-free design fits comfortably around your waist so you can stay active throughout the day.\n\n</div>"
+            "custom_liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n\n<span style=\"font-weight: bold;\">✨ Helps Firm & Tighten Skin</span> – Supports a more lifted, smoother, and youthful-looking appearance.<br><br>\n\n<span style=\"font-weight: bold;\">💡 LED Light Therapy</span> – Helps refresh and improve the look of dull, tired skin with regular use.<br><br>\n\n<span style=\"font-weight: bold;\">⚡ Microcurrent Technology</span> – Gently stimulates the skin to enhance your skincare routine.<br><br>\n\n<span style=\"font-weight: bold;\">🔥 Gentle Heating Function</span> – Helps open pores and improve serum or cream absorption.<br><br>\n\n<span style=\"font-weight: bold;\">💆 Sonic Vibration Massage</span> – Leaves your face and neck feeling relaxed, refreshed, and rejuvenated.\n\n</div>"
           }
         },
         "variant_picker": {
@@ -140,7 +140,7 @@
             "icon": "none",
             "icon_size": "medium",
             "custom_icon": "",
-            "text": "Instant comfort when I need it most.",
+            "text": "A few minutes today, a youthful glow tomorrow",
             "text_size": 20,
             "link": ""
           }
@@ -194,7 +194,7 @@
         "heading_r7Wwa6": {
           "type": "heading",
           "settings": {
-            "heading": "Fast Relief, Anytime",
+            "heading": "Reveal Your Natural Glow",
             "heading_size": "h1",
             "heading_tag": "h2"
           }
@@ -202,7 +202,7 @@
         "text_txn6Gr": {
           "type": "text",
           "settings": {
-            "text": "<p>Experience soothing heat and gentle massage designed to help ease period discomfort. Wear it comfortably throughout your day and enjoy relief wherever you are.</p><h3></h3>",
+            "text": "<p>Give your skin the care it deserves. Advanced beauty technology helps your skin look smoother, brighter, and more refreshed with every use.</p><h3></h3>",
             "text_size": "typeset2",
             "secondary_color": false
           }
@@ -214,7 +214,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/1759344654_phpqfprhlgfmdss1t1w5ia.jpg",
+        "image": "shopify://shop_images/Untitled_1080_x_1080_px_2.webp",
         "image_position": "center center",
         "layout": "image_first",
         "text_box_position": "middle",
@@ -248,7 +248,7 @@
             "icon": "none",
             "icon_size": "medium",
             "custom_icon": "",
-            "text": "A lifesaver during my period",
+            "text": "Radiance is confidence made visible",
             "text_size": 20,
             "link": ""
           }
@@ -277,7 +277,7 @@
         "heading_NVjMGc": {
           "type": "heading",
           "settings": {
-            "heading": "Stay Comfortable & Active",
+            "heading": "Lift, Firm & Refresh",
             "heading_size": "h1",
             "heading_tag": "h2"
           }
@@ -285,7 +285,7 @@
         "text_xqVGMr": {
           "type": "text",
           "settings": {
-            "text": "<p>Don't let cramps slow you down. Our portable, hands-free design helps you stay focused, productive, and comfortable whether you're at work, school, or relaxing at home.</p>",
+            "text": "<p>Enjoy a relaxing skincare experience designed to support a firmer, more youthful-looking appearance from the comfort of your home.</p>",
             "text_size": "typeset2",
             "secondary_color": false
           }
@@ -297,7 +297,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/1759344647_php2pk2dijvcmg20OEv0pV.jpg",
+        "image": "shopify://shop_images/1759345034_phpr4c0mverauv8cqGgRh6.jpg",
         "image_position": "center center",
         "layout": "image_first",
         "text_box_position": "middle",
