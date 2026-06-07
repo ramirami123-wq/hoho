@@ -163,7 +163,120 @@
         "applied_discount_message": "خصم %{amount} من إجمالي سعر الطلب",
         "discount_has_been_applied": "تم تطبيق الخصم",
         "discount_has_been_removed": "تمت إزالة الخصم",
-        "automatic_discount_tooltip": "لا يمكن إزالة الخصومات المطبقة تلقائياً"
+        "automatic_discount_tooltip": "لا يمكن إزالة الخصومات المطبقة تلقائياً",
+        "gift_card_has_been_applied": "تم تطبيق بطاقة الهدية",
+        "gift_card_has_been_removed": "تمت إزالة بطاقة الهدايا",
+        "gift_card_subscriptions_notice": "ستطبق بطاقات الهدايا على دفعتك الأولى فقط",
+        "discount_already_applied": "تم تطبيق خصم على هذا الطلب. لا يمكنك إضافة خصم آخر.",
+        "cart_does_not_meet_discount_requirements_notice": "رمز الخصم <strong style=\"text-transform:uppercase\">%{code}</strong> غير صالح للمنتجات الموجودة في سلة التسوق الخاصة بك",
+        "discount_requires_customer_notice": "أدخل معلومات الشحن الخاصة بك لتطبيق رمز الخصم <strong style=\"text-transform:uppercase\">%{code}</strong>",
+        "customer_does_not_meet_discount_requirements_notice": "كود الخصم <strong style=\"text-transform:uppercase\">%{code}</strong> غير متاح لك حاليًا",
+        "eligible_customer_missing_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> رمز الخصم يتطلب عميلاً مؤهلاً",
+        "shipping_information_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> رمز الخصم غير متاح لعنوان الشحن الخاص بك",
+        "customer_already_used_once_per_customer_discount_notice": "تم استخدام رمز الخصم <strong style=\"text-transform:uppercase\">%{code}</strong> بالفعل",
+        "subtotal_label": "المجموع الفرعي",
+        "subtotal_label_with_quantity": {
+          "one": "المجموع الفرعي · %{count} من الأصناف",
+          "other": "المجموع الفرعي · %{count} من الأصناف"
+        },
+        "shipping_label": "الشحن",
+        "pickup_label": "الاستلام من المتجر",
+        "no_pickup_location": "لا توجد مواقع استلام متاحة.",
+        "pickup_unavailable_banner_title": {
+          "one": "لا توجد متاجر متاحة تحتوي على هذا المنتج.",
+          "other": "لا توجد متاجر متاحة تحتوي على العناصر الخاصة بك"
+        },
+        "pickup_unavailable_banner_title_with_country": {
+          "one": "لا توجد متاجر متاحة في %{country} تحتوي على هذا المنتج",
+          "other": "لا توجد متاجر متاحة في %{country} تحتوي على أغراضك"
+        },
+        "pickup_unavailable_banner_body": {
+          "ship_to_address": "عنوان الشحن",
+          "ship_to_address_instead_html": "بدلاً من ذلك %{link}"
+        },
+        "tip_label": "نصيحة",
+        "unconfirmed_label": "غير مؤكد",
+        "calculating_shipping": "جاري الحساب...",
+        "calculating": "جاري الحساب...",
+        "shipping_default_value": "تحسب عند الخطوة التالية",
+        "shipping_discount_title": "خصم الشحن",
+        "shipping_pending_message": "غير متاح بعد",
+        "shipping_policy_link": "تكاليف الشحن",
+        "taxes_label": "الضرائب",
+        "tax_line": {
+          "gst": "ضريبة السلع والخدمات",
+          "pst": "التوقيت الصيفي لمنطقة المحيط الهادئ",
+          "rst": "إعادة الضبط",
+          "qst": "الربع الأول من السنة المالية",
+          "vpt": "منفذ المحور الافتراضي"
+        },
+        "estimated_taxes_label": "الضرائب المقدرة",
+        "estimated_taxes_label_short": "تقديرية",
+        "information_estimated_taxes_label": "الضرائب (تقديرية)",
+        "estimated_taxes_finalization_tooltip_content": "سيتم تأكيد الضريبة النهائية والمبلغ الإجمالي عبر البريد الإلكتروني أو الرسائل النصية بعد تقديم طلبك.",
+        "estimated_taxes_finalization_tooltip_content_short": "تم الانتهاء من الضريبة بعد الدفع",
+        "order_total_label": "إجمالي الطلب",
+        "price_before_discount_aria_text": "السعر الأصلي",
+        "price_after_discount_aria_text": "سعر مخفَّض",
+        "discount_code_aria_text": "رمز الخصم",
+        "total_savings": "إجمالي المدخرات",
+        "total_label": "الإجمالي",
+        "total_due_label": "الإجمالي المستحق",
+        "total_paid_label": "إجمالي المدفوع",
+        "total_price_label": "السعر الكلي",
+        "total_outstanding_label": "المبلغ المستحق للدفع",
+        "deposit_label": "إيداع",
+        "total_due_today_label": "الإجمالي المستحق اليوم",
+        "total_due_later_label": "الإجمالي المستحق لاحقًا",
+        "partial_total_label": "الإجمالي",
+        "free_total_label": "مجاني",
+        "free_shipping_total_label": "مجاني",
+        "paid_label": "مدفوع",
+        "payment_due_label": "الدفع مستحق",
+        "vat_label_html": "بما في ذلك %{amount} كضرائب",
+        "duties_included_label": "يشمل الإجمالي الضرائب والرسوم الجمركية. لا توجد رسوم إضافية عند التسليم.",
+        "discount_and_gift_card_savings_notice": "بعد خصم %{discount_amount} و %{gift_card_amount} من رصيد بطاقات الهدايا",
+        "discount_savings_notice": "بعد خصم %{discount_amount}",
+        "gift_card_savings_notice": "بعد بطاقات هدايا بقيمة %{gift_card_amount}",
+        "cost_table_title": "ملخص التكلفة",
+        "cost_table_item_column_header": "بند",
+        "cost_table_value_column_header": "قيمة",
+        "description_label": "الوصف",
+        "price_label": "السعر",
+        "price_per_item": {
+          "accessibility_label": "%{price} لكل قطعة",
+          "label": "%{price}/الوحدة"
+        },
+        "quantity_label": "الكمية",
+        "product_change_label": "تغيير",
+        "product_image_label": "صورة المنتج",
+        "product_image_quantity_label": "الكمية",
+        "scroll_order_summary": "مرر للمزيد من العناصر",
+        "expand_order_summary_short": "عرض",
+        "collapse_order_summary_short": "إخفاء",
+        "original_price": "السعر الأصلي",
+        "sale_price": "سعر البيع",
+        "compare_at_sale": "المبيعات (%{sale_amount})",
+        "total_updated_label": "إجمالي السعر المحدّث:",
+        "order_total_updated_label": "المجموع الكلي المحدّث",
+        "total_already_paid_label": "مدفوع",
+        "unit_price": {
+          "accessible_separator": "لكل",
+          "content_html": "%{price}%{accessible_separator}٪ لكل %{per_unit}",
+          "per_item": {
+            "single": "%{price} للقطعة",
+            "one": "%{price} لكل %{count} قطعة",
+            "other": "%{price} لكل %{count} قطعة"
+          }
+        },
+        "gift_card_ending": "بطاقة هدية تنتهي بـ %{last_characters}",
+        "estimated_tax_label": "ضريبة تقديرية",
+        "multiple_shipping_lines_label": "إجمالي الشحن",
+        "recurring_subtotal_label": "المجموع الفرعي المتكرر",
+        "recurring_total_label": "الإجمالي المتكرر",
+        "recurring_total_tooltip": "لا يشمل الشحن أو الضرائب أو الرسوم الجمركية أو أي خصومات مطبقة.",
+        "confirmation_number_label": "رقم التأكيد #%{confirmation_number}",
+        "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}</strong> لا يمكن استخدامه مع خصوماتك الحالية."
       }
     }
   },
@@ -301,6 +414,147 @@
           }
         }
       }
+    },
+    "payment_methods": {
+      "update_payment_method": {
+        "pre_orders_title": "القادم",
+        "pre_orders_list_accessibility_label": "قائمة المنتجات تحت الطلب",
+        "resources_list_accessibility_label": "منتجات الاشتراك ومنتجات الطلبات المعلقة باستخدام طريقة الدفع هذه",
+        "resources_card_scroll": "مرر للمزيد من العناصر",
+        "resources_card_show_more": "أظهر المزيد",
+        "resources_card_show_less": "عرض أقل",
+        "loading_form_accessibility_message": "جارٍ تحميل نموذج تحديث طريقة الدفع",
+        "loading_current_payment_method": "جارٍ تحميل طريقة الدفع الحالية",
+        "loading_digital_wallets": "جارٍ تحميل خيارات المحفظة الرقمية",
+        "loading_card_fields": "جارٍ تحميل حقول بطاقة الائتمان",
+        "loading_resources": "جارٍ تحميل الاشتراكات والطلبات القادمة"
+      },
+      "link_expired": {
+        "message": "انتهت صلاحية رابط تحديث طريقة الدفع هذه.",
+        "update_message": "انتهت صلاحية رابط تحديث طريقة الدفع هذه.",
+        "add_message": "لقد انتهت صلاحية هذا الرابط الخاص بإضافة طريقة الدفع الخاصة بك.",
+        "return_home_button": "العودة إلى الصفحة الرئيسية"
+      },
+      "update_success": {
+        "title": "تم تحديث طريقة الدفع",
+        "done_button": "مواصلة التسوق"
+      },
+      "add_success": {
+        "title": "تمت إضافة طريقة الدفع",
+        "done_button": "مواصلة التسوق"
+      },
+      "card_fields": {
+        "card_number_label": "رقم البطاقة",
+        "card_number_placeholder": "رقم البطاقة",
+        "name_on_card_label": "الاسم على البطاقة",
+        "name_on_card_placeholder": "الاسم على البطاقة",
+        "card_expiry_label": "تاريخ الانتهاء (شهر / سنة)",
+        "card_expiry_placeholder": "تاريخ الانتهاء (شهر / سنة)",
+        "card_verification_value_label": "الرمز الأمني",
+        "card_verification_value_placeholder": "الرمز الأمني",
+        "card_start_label": "تاريخ الإصدار (شهر / سنة)",
+        "card_start_placeholder": "تاريخ الإصدار (شهر / سنة)",
+        "tooltip": {
+          "tooltip_accessibility_label": "مزيد من المعلومات",
+          "card_verification_value_explanation_amex": "رمز الأمان المكون من 4 أرقام على واجهة بطاقتك",
+          "card_verification_value_explanation_other": "الرمز الأمني المكون من 3 أرقام على ظهر بطاقتك",
+          "card_verification_value_explanation": "رمز الأمان المكون من 3 أرقام يوجد عادةً على ظهر بطاقتك. تحتوي بطاقات أمريكان إكسبريس على رمز مكون من 4 أرقام يقع في الجهة الأمامية.",
+          "card_security_notice": "جميع المعاملات آمنة ومشفرة."
+        },
+        "field_errors": {
+          "credit_card_name_invalid": "أدخل اسمك تمامًا كما هو مكتوب على بطاقتك",
+          "credit_card_number_invalid": "أدخل رقم بطاقة صحيحًا",
+          "credit_card_expiry_invalid": "أدخل تاريخ انتهاء صلاحية البطاقة الصحيح",
+          "credit_card_verification_value_blank": "أدخل رمز CVV أو رمز الحماية الموجود على بطاقتك"
+        },
+        "unavailable": {
+          "text": "لا تتوفر خدمة الدفع ببطاقات الائتمان والخصم في الوقت الحالي.",
+          "link_text": "تحديث هذه الصفحة",
+          "suffix": "أو حاول مرة أخرى لاحقًا."
+        }
+      },
+      "payment_delete": {
+        "title": "حذف طريقة الدفع",
+        "description_without_replacement": "طريقة الدفع هذه لن تكون متاحة بعد الآن للمشتريات المستقبلية.",
+        "description_with_replacement": "سيؤثر حذف طريقة الدفع هذه على المدفوعات المفوضة مسبقًا. يمكنك اختياريًا استبدالها بطريقة دفع أخرى لمواصلة استلام الطلبات القادمة.",
+        "warning_message_with_replacement": {
+          "with_pending_orders_and_subscriptions": "سيؤثر حذف طريقة الدفع هذه على الدفعات المصرح بها مسبقًا. ما لم تحدد طريقة دفع بديلة، فسيستمر تحصيل الرسوم من طريقة الدفع هذه لأي أرصدة مستحقة على الطلبات الحالية. سيتيح لك تحديد طريقة دفع بديلة استلام طلبات الاشتراك القادمة دون انقطاع.",
+          "with_pending_orders": "سيؤدي حذف طريقة الدفع هذه إلى إزالتها من حسابك ولن تكون متاحة بعد الآن للمشتريات المستقبلية. ما لم تحدد طريقة دفع بديلة، فستظل تُحصّل منك الرسوم عن أي أرصدة مستحقة على الطلبات الحالية.",
+          "with_subscriptions": "سيؤثر حذف طريقة الدفع هذه على المدفوعات المفوترة مسبقًا. استبدلها بطريقة دفع بديلة لمواصلة استلام الطلبات القادمة."
+        },
+        "warning_message_without_replacement": {
+          "with_pending_orders_and_subscriptions": "سيؤثر حذف طريقة الدفع هذه على الدفعات المُفوض بها مسبقًا. ستظل طريقة الدفع هذه قيد الاستخدام لتحصيل أي أرصدة مستحقة على الطلبات الحالية، ولكنك لن تتلقى طلبات الاشتراك القادمة. أضِف طريقة دفع بديلة لمواصلة تلقي طلبات الاشتراك.",
+          "with_pending_orders": "سيؤدي حذف طريقة الدفع هذه إلى إزالتها من حسابك ولن تكون متاحة بعد الآن لعمليات الشراء المستقبلية. وستظل تُحصّل لتسوية أي أرصدة مستحقة على الطلبات الحالية.",
+          "with_subscriptions": "سيؤثر حذف طريقة الدفع هذه على المدفوعات المفوضة مسبقًا. أضف طريقة دفع بديلة لمواصلة استلام الطلبات القادمة."
+        },
+        "payment_method_selector_placeholder": "حدد طريقة دفع بديلة (اختياري)",
+        "payment_method_selector_no_alternative_payment": "لا توجد طريقة بديلة",
+        "replace_method_with_new_method_description": "سيتم حذف {{currentPaymentMethodName}} الخاص بك واستبداله بـ {{newPaymentMethodName}}.",
+        "error_when_deleting": "نعتذر ولكن حدث خطأ ولم نتمكن من حذف طريقة الدفع هذه. يُرجى إعادة المحاولة لاحقًا أو تحديث الصفحة.",
+        "delete_and_replace_button": "حذف واستبدال",
+        "delete_and_replace_button_accessibility_label": "احذف {{currentPaymentMethodName}} واستبدلها بـ {{newPaymentMethodName}}.",
+        "deleted_successfully": "تم حذف طريقة الدفع بنجاح.",
+        "loading_available_payment_methods_accessibility_label": "جاري تحميل طرق الدفع المتاحة"
+      },
+      "add_payment_method": {
+        "title": "إضافة طريقة دفع",
+        "button_title": "أضِف",
+        "payment_method_added_confirmation": "تمت إضافة طريقة الدفع",
+        "missing_customer_error": "حدث خطأ ما. يرجى المحاولة مرة أخرى أو الاتصال بالدعم.",
+        "replace_mode_warning": "سيؤثر حذف طريقة الدفع هذه على الاشتراكات أو الطلبات المسبقة. يُرجى استبدالها بطريقة دفع بديلة لمواصلة تلقي الطلبات القادمة.",
+        "choose_from_list": "اختر من القائمة",
+        "add_new_button": "إضافة جديد",
+        "billing_address": {
+          "title": "عنوان الفواتير",
+          "add_billing_address_button": "إضافة جديد",
+          "add_billing_address_button_accessibility_label": "إضافة عنوان فوترة جديد",
+          "choose_billing_address_from_list_button": "اختر من القائمة",
+          "choose_billing_address_from_list_button_accessibility_label": "اختر عنوان فوترة من القائمة",
+          "missing_billing_address_error_message": "الرجاء تحديد عنوان الفواتير",
+          "default_checkbox": "تعيين كوسيلة الدفع الافتراضية"
+        },
+        "subscription_contracts": {
+          "title": "استخدام وسيلة الدفع للطلبات المتكررة",
+          "more_items": {
+            "one": "{{count}} منتج إضافي",
+            "other": "{{count}} منتجًا آخر"
+          },
+          "product_count": {
+            "one": "{{count}} منتج",
+            "other": "{{count}} منتجات"
+          },
+          "product_details": "تفاصيل المنتج",
+          "load_more": "تحميل المزيد"
+        },
+        "updating_contracts": {
+          "one": "تحديث عقد الاشتراك {{count}}...",
+          "other": "جاري تحديث {{count}} عقود اشتراك..."
+        },
+        "contracts_updated": {
+          "one": "تم تحديث عقد الاشتراك {{count}} بنجاح",
+          "other": "تم تحديث {{count}} عقد اشتراك بنجاح"
+        },
+        "contracts_update_failed": "فشل تحديث بعض عقود الاشتراك",
+        "subscription_contracts_updated": "تم تحديث {{succeeded}} من {{total}} الاشتراكات",
+        "invalid_wallet_type_error": "نوع المحفظة غير صالح."
+      },
+      "three_d_secure": {
+        "title": "التحقق الثلاثي الأبعاد",
+        "verification_failed": "تعذر التحقق من دفعتك. يرجى إعادة المحاولة أو استخدام طريقة دفع أخرى."
+      }
+    },
+    "payment_method_brands": {
+      "visa": "تأشيرة",
+      "mastercard": "ماستركارد",
+      "americanexpress": "أمريكان إكسبريس",
+      "discover": "اكتشف",
+      "dinersclub": "داينرز كلوب",
+      "jcb": "جيه سي بي",
+      "elo": "إيلو",
+      "visaelectron": "فيزا إلكترون",
+      "maestro": "المايسترو",
+      "dankort": "دانكورت",
+      "hipercard": "هايبركارد"
     }
   }
 }
