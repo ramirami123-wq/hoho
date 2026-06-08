@@ -3878,7 +3878,12 @@
       "gift_card_code": "رمز بطاقة الهدايا",
       "shop_link": "العودة إلى المتجر",
       "remaining_html": "المتبقي {{ balance }}",
-      "add_to_apple_wallet": "أضف إلى Apple Wallet"
+      "add_to_apple_wallet": "أضف إلى Apple Wallet",
+      "qr_image_alt": "رمز الاستجابة السريعة — امسح الرمز لاسترداد بطاقة الهدايا",
+      "copy_code": "رمز النسخ",
+      "expired": "انتهت صلاحيته",
+      "copy_code_success": "تم نسخ الرمز بنجاح",
+      "print_gift_card": "طباعة"
     }
   },
   "sections": {
@@ -3940,6 +3945,21 @@
     },
     "video": {
       "load_video": "تحميل الفيديو: {{ description }}"
+    }
+  },
+  "recipient": {
+    "form": {
+      "checkbox": "أريد إرسال هذا كهدية",
+      "email_label": "البريد الإلكتروني للمستلم",
+      "email_label_optional_for_no_js_behavior": "البريد الإلكتروني للمستلم (اختياري)",
+      "email": "بريد إلكتروني",
+      "name_label": "اسم المستلم (اختياري)",
+      "name": "الاسم",
+      "message_label": "رسالة (اختياري)",
+      "message": "رسالة",
+      "max_characters": "{{ max_chars }} حرف كحد أقصى",
+      "send_on": "سنة-شهر-يوم",
+      "send_on_label": "أرسل في (اختياري)"
     }
   }
 }
