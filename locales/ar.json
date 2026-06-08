@@ -2151,7 +2151,8 @@
     "country_label": "البلد/المنطقة",
     "update_country": "تحديث البلد/المنطقة",
     "language_label": "اللغة",
-    "update_language": "تحديث اللغة"
+    "update_language": "تحديث اللغة",
+    "text_direction_trigger": "من اليمين إلى اليسار"
   },
   "general": {
     "social": {
@@ -2282,5 +2283,128 @@
     "product_title": "عنوان المنتج على سبيل المثال",
     "collection_title": "اسم مجموعتك",
     "no_content": "هذا القسم لا يتضمن أي محتوى حاليًا. أضف محتوى إلى هذا القسم باستخدام الشريط الجانبي."
+  },
+  "customer": {
+    "account": {
+      "title": "حساب",
+      "details": "تفاصيل الحساب",
+      "view_addresses": "عرض العناوين",
+      "return": "العودة إلى تفاصيل الحساب"
+    },
+    "account_fallback": "حساب",
+    "activate_account": {
+      "title": "تفعيل الحساب",
+      "subtext": "أنشئ كلمة مرور لتفعيل حسابك.",
+      "password": "كلمة المرور",
+      "password_confirm": "تأكيد كلمة المرور",
+      "submit": "تفعيل الحساب",
+      "cancel": "رفض الدعوة"
+    },
+    "addresses": {
+      "title": "العناوين",
+      "default": "افتراضي",
+      "add_new": "إضافة عنوان جديد",
+      "edit_address": "تعديل العنوان",
+      "first_name": "الاسم الأول",
+      "last_name": "اسم العائلة",
+      "company": "شركة",
+      "address1": "العنوان 1",
+      "address2": "العنوان 2",
+      "city": "مدينة",
+      "country": "البلد/المنطقة",
+      "province": "مقاطعة",
+      "zip": "الرمز البريدي",
+      "phone": "هاتف",
+      "set_default": "تعيين كعنوان افتراضي",
+      "add": "أضف العنوان",
+      "update": "تحديث العنوان",
+      "cancel": "إلغاء",
+      "edit": "تعديل",
+      "delete": "حذف",
+      "delete_confirm": "هل أنت متأكد من أنك ترغب في حذف هذا العنوان؟"
+    },
+    "log_in": "تسجيل الدخول",
+    "log_out": "تسجيل الخروج",
+    "login_page": {
+      "cancel": "إلغاء",
+      "create_account": "إنشاء حساب",
+      "email": "بريد إلكتروني",
+      "forgot_password": "هل نسيت كلمة المرور؟",
+      "guest_continue": "استمر/استمروا",
+      "guest_title": "المتابعة كضيف",
+      "password": "كلمة المرور",
+      "title": "تسجيل الدخول",
+      "sign_in": "تسجيل الدخول",
+      "submit": "إرسال",
+      "dont_have_account": "ليس لديك حساب بعد؟",
+      "return": "العودة إلى المتجر"
+    },
+    "order": {
+      "title": "اطلب {{ name }}",
+      "date_html": "وضعت بتاريخ {{ date }}",
+      "cancelled_html": "تم إلغاء الطلب في {{ date }}",
+      "cancelled_reason": "السبب: {{ reason }}",
+      "billing_address": "عنوان الفاتورة",
+      "payment_status": "حالة الدفع",
+      "shipping_address": "عنوان الشحن",
+      "fulfillment_status": "حالة الإنجاز",
+      "discount": "خصم",
+      "shipping": "الشحن",
+      "tax": "ضريبة",
+      "product": "المنتج",
+      "sku": "رمز التخزين التعريفي",
+      "price": "السعر",
+      "quantity": "الكمية",
+      "total": "الإجمالي",
+      "fulfilled_at_html": "مُنجز {{ date }}",
+      "track_shipment": "تتبع الشحنة",
+      "tracking_url": "رابط التتبع",
+      "tracking_company": "شركة الشحن",
+      "tracking_number": "رقم التتبع",
+      "subtotal": "المجموع الفرعي",
+      "total_duties": "الواجبات",
+      "total_refunded": "تم رد الأموال"
+    },
+    "orders": {
+      "title": "سجل الطلبات",
+      "order_number": "أمر",
+      "order_number_link": "رقم الطلب {{ number }}",
+      "date": "تاريخ",
+      "payment_status": "حالة الدفع",
+      "fulfillment_status": "حالة الإنجاز",
+      "total": "الإجمالي",
+      "none": "لم تطلب أي طلبات بعد."
+    },
+    "recover_password": {
+      "title": "إعادة تعيين كلمة المرور الخاصة بك",
+      "subtext": "سوف نرسل لك رسالة بريد إلكتروني لإعادة تعيين كلمة المرور الخاصة بك",
+      "success": "لقد أرسلنا إليك بريدًا إلكترونيًا يحتوي على رابط لتحديث كلمة مرورك."
+    },
+    "register": {
+      "title": "إنشاء حساب",
+      "first_name": "الاسم الأول",
+      "last_name": "اسم العائلة",
+      "email": "بريد إلكتروني",
+      "password": "كلمة المرور",
+      "submit": "أنشئ",
+      "return": "العودة إلى المتجر"
+    },
+    "reset_password": {
+      "title": "إعادة تعيين كلمة مرور الحساب",
+      "subtext": "أدخل كلمة مرور جديدة",
+      "password": "كلمة المرور",
+      "password_confirm": "تأكيد كلمة المرور",
+      "submit": "إعادة تعيين كلمة المرور"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "إليك بطاقة الهدية الخاصة بك بقيمة {{ value }} لـ {{ shop }}!",
+      "subtext": "بطاقة الهدية الخاصة بك",
+      "gift_card_code": "رمز بطاقة الهدايا",
+      "shop_link": "العودة إلى المتجر",
+      "remaining_html": "المتبقي {{ balance }}",
+      "add_to_apple_wallet": "أضف إلى Apple Wallet"
+    }
   }
 }
