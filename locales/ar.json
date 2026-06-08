@@ -1918,7 +1918,77 @@
               "claim_shop_cash_description": "يمكنك استخدام رصيد Shop Cash الخاص بك في عمليات الشراء المستقبلية داخل تطبيق Shop."
             }
           }
-        }
+        },
+        "attempted_delivery_label": "محاولة تسليم",
+        "attempted_to_deliver_label": "حاول التسليم",
+        "preparing_for_shipping_label": "جارٍ التحضير للشحن",
+        "ready_for_pickup_label": "جاهز للاستلام",
+        "ready_for_pickup_description": "هذه العناصر جاهزة للاستلام. يرجى إحضار تأكيد الطلب عند الاستلام.",
+        "ready_for_pickup_location": "طلبك جاهز للاستلام من الموقع",
+        "picked_up_label": "التقطت",
+        "canceled_label": "ملغي",
+        "canceled_title": "تم إلغاء طلبك",
+        "come_back": "ارجع إلى هذه الصفحة للحصول على تحديثات حول حالة شحنتك.",
+        "company_tracking_number": "{{company}} رقم التتبع:",
+        "confirmed_label": "تم التأكيد",
+        "confirmed_title": "تم تأكيد طلبك",
+        "confirmed_description_pickup": "ستتلقى رسالة بريد إلكتروني عندما يكون طلبك جاهزًا للاستلام.",
+        "confirmed_description_digital": "ستتلقى بريدًا إلكترونيًا عندما يصبح طلبك جاهزًا.",
+        "confirmed_description_gift_card_text": "ستتلقى رسالة نصية عندما يصبح طلبك جاهزًا.",
+        "complete_label": "اكتمل",
+        "delivered_label": "تم التسليم",
+        "delivered_description_gift_card": {
+          "one": "تم إرسال بطاقة الهدايا بالبريد الإلكتروني.",
+          "other": "أرسلت بطاقات الهدايا عبر البريد الإلكتروني."
+        },
+        "delivered_description_gift_card_text": {
+          "one": "تم إرسال بطاقة الهدايا عبر رسالة نصية.",
+          "other": "تم إرسال بطاقات الهدايا عبر الرسائل النصية."
+        },
+        "gift_card_label": {
+          "one": "بطاقة هدية",
+          "other": "بطاقات الهدايا"
+        },
+        "gift_card_resend_button": {
+          "one": "إعادة إرسال بطاقة الهدايا",
+          "other": "إعادة إرسال بطاقات الهدايا"
+        },
+        "gift_resend_success": {
+          "one": "إعادة إرسال بطاقة الهدايا",
+          "other": "أُعيد إرسال بطاقات الهدايا"
+        },
+        "gift_resend_failure": {
+          "one": "حدثت مشكلة في إعادة إرسال بطاقة الهدية الخاصة بك. يُرجى المحاولة مرة أخرى أو الاتصال بنا.",
+          "other": "حدثت مشكلة في إعادة إرسال بطاقات الهدايا الخاصة بك. حاول مرة أخرى أو اتصل بنا."
+        },
+        "confirmed_gift_card_additional_description": {
+          "one": "سيتم إرسال بطاقة الهدايا في رسالة بريد إلكتروني منفصلة.",
+          "other": "سيتم إرسال كل بطاقة هدية في بريد إلكتروني منفصل."
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "one": "سيتم إرسال بطاقة الهدايا في رسالة نصية منفصلة.",
+          "other": "ستُرسل كل بطاقة هدية في رسالة نصية منفصلة."
+        },
+        "status_timestamp": "تم التحديث {{date}}",
+        "estimated_delivery": "المتوقع {{date}}",
+        "expected_by": "من المتوقع حلولها بحلول {{date}}",
+        "was_expected_by": "كان متوقعًا بحلول {{date}}",
+        "delivered": "وصلت {{date}}",
+        "buy_with_prime_logo_accessibility_label": "شعار الشراء عبر أمازون برايم",
+        "in_review_label": "قيد المراجعة",
+        "in_review_title": "طلبك قيد المراجعة",
+        "last_updated": "آخر تحديث {{date}}",
+        "multiple_shipments_label": "شحنات متعددة",
+        "multiple_statuses_label": "حالات طلب متعددة",
+        "no_tracking_number": "لا يوجد رقم تتبع لهذه الشحنة.",
+        "tracking_number": {
+          "one": "رقم التتبع",
+          "other": "أرقام التتبع"
+        },
+        "on_its_way_label": "في طريقها",
+        "out_for_delivery_label": "خارج للتسليم",
+        "resume_tracking": "تتبع السيرة الذاتية",
+        "submitted_label": "تم التقديم"
       },
       "status_mark_as_delivered": "تم التسليم",
       "fulfillment_status_title": "حالة التنفيذ: {{status}}",
@@ -1993,8 +2063,80 @@
             "view_order_for_details": "عرض الطلب لمزيد من التفاصيل",
             "estimated_delivery": "المتوقع {{date}}",
             "last_updated": "آخر تحديث {{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "تاريخ التسليم المقدر {{date}}"
           }
-        }
+        },
+        "payment_status": {
+          "gallery_view": {
+            "overdue": "الدفع متأخر",
+            "due": "تاريخ الاستحقاق {{date}}",
+            "due_today": "تاريخ الاستحقاق للدفع اليوم",
+            "due_without_date": "الدفع مستحق",
+            "due_on_fulfillment": "الدفع مستحق عند الإنجاز",
+            "pay_to_confirm": "ادفع للتأكيد",
+            "payment_not_due": "الدفع غير مستحق بعد"
+          },
+          "list_view": {
+            "overdue": "متأخر",
+            "due": "تاريخ الاستحقاق {{date}}",
+            "due_today": "مستحق اليوم",
+            "paid": "مدفوع",
+            "due_without_date": "مستحقة",
+            "due_on_fulfillment": "مستحق عند الاستيفاء",
+            "pay_to_confirm": "ادفع للتأكيد",
+            "payment_not_due": "ليس بعد استحقاقه"
+          }
+        },
+        "sort_by": "الترتيب حسب: {{option}}",
+        "sort_hide_options_accessibility_label": "إخفاء خيارات الفرز للأوامر المؤكدة.",
+        "sort_show_options_accessibility_label": "إظهار خيارات الفرز للطلبات المؤكدة.",
+        "sort_currently_sorted_by_accessibility_label": "مرتب حاليًا حسب: {{option}}",
+        "sort_title": "فرز",
+        "sort": {
+          "date": {
+            "newest": "الأحدث للأقدم",
+            "oldest": "من الأقدم إلى الأحدث"
+          },
+          "location": {
+            "ascending": "الموقع (أ-ي)",
+            "descending": "الموقع (تنازلي)"
+          },
+          "order_number": {
+            "ascending": "رقم الطلب (من الأدنى للأعلى)",
+            "descending": "رقم الطلب (من الأعلى إلى الأقل)"
+          },
+          "order_total": {
+            "ascending": "إجمالي الطلب (من الأدنى للأعلى)",
+            "descending": "إجمالي الطلب (من الأعلى إلى الأقل)"
+          }
+        },
+        "location_filter_picker": {
+          "all_location": "كافة المواقع",
+          "current_location": "الموقع الحالي",
+          "switch_view": "تبديل طريقة العرض"
+        },
+        "filter_title": "عامل تصفية",
+        "filter": {
+          "clear_section": "مسح المقطع",
+          "clear_all": "مسح الكل",
+          "apply": "تقديم",
+          "date": {
+            "start_date": "تاريخ البدء",
+            "end_date": "تاريخ الانتهاء",
+            "title": "تاريخ الطلب",
+            "today": "اليوم",
+            "last_7_days": "آخر ٧ أيام",
+            "last_30_days": "آخر 30 يومًا",
+            "last_90_days": "آخر 90 يومًا",
+            "last_365_days": "آخر 12 شهرًا",
+            "custom": "مخصص"
+          }
+        },
+        "show_order_actions_accessibility_label": "عرض إجراءات الطلب للطلب {{name}}",
+        "view_order": "عرض الطلب",
+        "view_order_accessibility_label": "عرض الطلب {{orderName}}"
       }
     },
     "order_details": {
