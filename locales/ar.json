@@ -2385,6 +2385,62 @@
         }
       },
       "add_button": "أضِف"
+    },
+    "subscriptions": {
+      "update_payment_instrument": {
+        "loading": "جارٍ تحميل طرق الدفع",
+        "no_payment_methods_available": "لا توجد طرق دفع متاحة",
+        "select_new_payment_method": "اختر طريقة دفع جديدة",
+        "current_method": "الحالي",
+        "cancel": "إلغاء",
+        "save": "حفظ",
+        "success": "تم تحديث طريقة الدفع",
+        "use_new_payment_method": "+ استخدام طريقة دفع جديدة"
+      }
+    },
+    "intents": {
+      "subscription_replace_payment_method": {
+        "card_number": "رقم البطاقة",
+        "title": "استبدال طريقة الدفع",
+        "replace_with": "استبدال بـ",
+        "add_new_payment_method": "إضافة جديد",
+        "save_button": "حفظ",
+        "close_button": "إغلاق",
+        "loading": "جارٍ تحميل نافذة استبدال طريقة الدفع المنبثقة",
+        "success": "تم تحديث طريقة الدفع",
+        "invalid_subscription_contract": "تعذر العثور على الاشتراك",
+        "expiry_date": "تاريخ الانتهاء: {{expiryDate}}",
+        "edit_current_payment_method": "تعديل طريقة الدفع الحالية",
+        "edit_selected_payment_method": "تعديل طريقة الدفع المحددة"
+      }
+    },
+    "sign_in": {
+      "brand_logo_alt_text": "شعار %{shop_name}",
+      "processing": "جارٍ المعالجة…",
+      "step_one": {
+        "page_title": "تسجيل الدخول - %{shop_name}",
+        "heading": "تسجيل الدخول",
+        "subheading": "أدخل بريدك الإلكتروني وسنرسل لك رمز التحقق",
+        "subheading_with_sign_in_options": "تسجيل الدخول أو إنشاء حساب",
+        "input_field_label": "بريد إلكتروني",
+        "button": "استمر/استمروا",
+        "or": "أو",
+        "consent_agreement": "باستمرارك، فإنك توافق على %{terms}"
+      },
+      "step_two": {
+        "page_title": "أدخل الرمز - %{shop_name}",
+        "heading": "أدخل الرمز",
+        "subheading": "أُرسلت إلى %{email}",
+        "restart_link": "تسجيل الدخول باستخدام بريد إلكتروني مختلف",
+        "input_field_label": "رمز مكون من 6 أرقام",
+        "button": "إرسال"
+      },
+      "error": {
+        "invalid": {
+          "invalid_email": "أدخل عنوان بريد إلكتروني صالحًا",
+          "invalid_code": "أدخل الرمز الصحيح المكون من 6 أرقام"
+        }
+      }
     }
   },
   "products": {
@@ -2557,7 +2613,23 @@
     "social": {
       "links": {
         "vimeo": "فيميو",
-        "tiktok": "تيك توك"
+        "tiktok": "تيك توك",
+        "twitter": "تويتر",
+        "facebook": "فيسبوك",
+        "pinterest": "بينترست",
+        "instagram": "انستغرام",
+        "tumblr": "تامبلر",
+        "linkedin": "لينكدإن",
+        "snapchat": "سناب شات",
+        "youtube": "يوتيوب"
+      },
+      "alt_text": {
+        "share_on_facebook": "مشاركة",
+        "share_on_twitter": "تغريدة",
+        "share_on_pinterest": "ثبّته",
+        "share_on_whatsapp": "مشاركة",
+        "share_on_telegram": "مشاركة",
+        "share_by_email": "بريد إلكتروني"
       }
     },
     "continue_shopping": "العودة إلى المتجر",
@@ -2628,6 +2700,17 @@
     "breadcrumbs": {
       "home": "الرئيسية",
       "home_link_title": "العودة إلى الصفحة الرئيسية"
+    },
+    "password_page": {
+      "login_form_heading": "أدخل المتجر باستخدام كلمة المرور:",
+      "login_password_button": "ادخل باستخدام كلمة المرور",
+      "login_form_password_label": "كلمة المرور",
+      "login_form_password_placeholder": "كلمة المرور الخاصة بك",
+      "login_form_error": "كلمة المرور خاطئة!",
+      "login_form_submit": "إدخال",
+      "modal": "نافذة كلمة المرور المنبثقة",
+      "admin_link_html": "هل أنت مالك المتجر؟ <a href=\"/admin\" class=\"link link--underline\">سجل الدخول من هنا</a>",
+      "powered_by_shopify_html": "سيتم تشغيل هذا المتجر بواسطة {{ shopify }}"
     }
   },
   "date_formats": {
@@ -2804,6 +2887,67 @@
       "shop_link": "العودة إلى المتجر",
       "remaining_html": "المتبقي {{ balance }}",
       "add_to_apple_wallet": "أضف إلى Apple Wallet"
+    }
+  },
+  "sections": {
+    "header": {
+      "announcement": "إعلان",
+      "menu": "قائمة الطعام",
+      "cart_count": {
+        "one": "{{ count }} عنصر",
+        "other": "{{ count }} عنصر"
+      }
+    },
+    "cart": {
+      "title": "عربة التسوق",
+      "caption": "عناصر عربة التسوق",
+      "remove_title": "إزالة {{ title }}",
+      "subtotal": "المجموع الفرعي",
+      "new_subtotal": "المجموع الفرعي الجديد",
+      "note": "أضف ملاحظة إلى طلبك",
+      "note_placeholder": "كيف يمكننا مساعدتك؟",
+      "checkout": "شاهد هذا",
+      "empty": "عربة التسوق الخاصة بك فارغة حاليًا",
+      "cart_error": "حدث خطأ أثناء تحديث سلة التسوق. يُرجى المحاولة مرة أخرى.",
+      "cart_quantity_error_html": "لا يمكنك إضافة أكثر من {{ quantity }} من هذا العنصر إلى سلة التسوق.",
+      "taxes_and_shipping_policy_at_checkout_html": "الضرائب و<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">الشحن</a> تُحسب عند الدفع",
+      "taxes_included_but_shipping_at_checkout": "الضريبة مشمولة وتُحسب تكلفة الشحن عند إتمام عملية الشراء",
+      "taxes_included_and_shipping_policy_html": "الضرائب مشمولة. يتم احتساب <a href=\"{{%20link%20}}\">رسوم الشحن</a> عند إتمام عملية الشراء.",
+      "taxes_and_shipping_at_checkout": "سيتم حساب الضرائب والشحن عند إتمام الشراء",
+      "headings": {
+        "product": "المنتج",
+        "price": "السعر",
+        "total": "الإجمالي",
+        "quantity": "الكمية"
+      },
+      "update": "تحديث",
+      "gift_wrapping_html": "مقابل {{ price }} يرجى تغليف المنتجات بهذا الترتيب.",
+      "gift_note_placeholder": "رسالة الهدية (مجانية واختيارية)"
+    },
+    "footer": {
+      "social_placeholder": "تابعنا على وسائل التواصل الاجتماعي!",
+      "payment": "طرق الدفع"
+    },
+    "featured_blog": {
+      "view_all": "عرض الكل",
+      "onboarding_title": "مشاركة مدونة",
+      "onboarding_content": "زود عملاءك بملخص لمنشور مدونتك"
+    },
+    "featured_collection": {
+      "view_all": "عرض الكل",
+      "view_all_label": "عرض جميع المنتجات في مجموعة {{ collection_name }}"
+    },
+    "collection_list": {
+      "view_all": "عرض الكل"
+    },
+    "collection_template": {
+      "title": "مجموعة",
+      "no_products": "عذرًا، لا توجد منتجات في هذه المجموعة",
+      "empty": "لم يتم العثور على منتجات",
+      "use_fewer_filters_html": "استخدام عدد أقل من الفلاتر أو <a class=\"&lt;span class='notranslate'&gt;{{ class }}&lt;/span&gt;\" href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">مسح الكل</a>"
+    },
+    "video": {
+      "load_video": "تحميل الفيديو: {{ description }}"
     }
   }
 }
