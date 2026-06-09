@@ -337,49 +337,65 @@
     "faq_7rE8am": {
       "type": "faq",
       "blocks": {
+        "question_M7TqYW": {
+          "type": "question",
+          "settings": {
+            "title": "كيف أشحن الجهاز؟",
+            "text": "<p>يُشحن الجهاز عبر كابل USB المرفق. وقت الشحن الكامل حوالي 1-2 ساعة، ويعمل لعدة جلسات على شحنة واحدة.</p>"
+          }
+        },
         "question_yqHqK6": {
           "type": "question",
           "settings": {
-            "title": "How does the device work?",
-            "text": "<p>It combines LED light therapy, microcurrent technology, gentle heat, and vibration massage to enhance your skincare routine.</p><h3></h3><h3></h3>"
+            "title": "كيف أستخدم جهاز ALMAS؟",
+            "text": "<p>نظّفي وجهك ورقبتك جيداً، ثم ضعي السيروم أو الكريم المرطب. شغّلي الجهاز واختاري مستوى الشدة المناسب، ودلّكي بحركات تصاعدية لطيفة لمدة 5-10 دقائق يومياً للحصول على أفضل النتائج.</p>"
           }
         },
         "question_7XFnnm": {
           "type": "question",
           "settings": {
-            "title": "Can I use it on both my face and neck?",
-            "text": "<p>Yes! The device is specially designed for use on the face, jawline, and neck areas.</p><h3></h3><h3></h3>"
+            "title": "هل يمكن استخدام السيروم أو الكريم مع الجهاز؟",
+            "text": "<p>نعم، بل يُنصح بذلك! الجهاز يعزز امتصاص السيروم والكريمات بشكل أعمق وأسرع بفضل تقنية الاهتزاز والميكروكيرنت. استخدمي سيروم الهيالورونيك أو أي كريم مرطب تفضلينه.</p>"
           }
         },
         "question_QTiLt3": {
           "type": "question",
           "settings": {
-            "title": "How often should I use it?",
-            "text": "<p>For best results, use the device for 5–10 minutes per session, several times per week.</p><h3></h3><h3></h3>"
+            "title": "هل الجهاز آمن للاستخدام اليومي؟",
+            "text": "<p>نعم، الجهاز مصمم للاستخدام اليومي بأمان. يحتوي على 3 مستويات شدة — ابدئي بالمستوى الأول إذا كانت هذه تجربتك الأولى مع أجهزة التجميل.</p>"
           }
         },
         "question_HCUMMj": {
           "type": "question",
           "settings": {
-            "title": "Can I use it with serums or creams?",
-            "text": "<p>Absolutely! It works great with your favorite skincare products and may help improve their absorption.</p><h3></h3>"
+            "title": "متى تظهر النتائج؟",
+            "text": "<p>تلاحظين فرقاً في نضارة البشرة من الأسبوع الأول، أما النتائج الكاملة في الشد والنحت فتظهر عادةً بعد 4-6 أسابيع من الاستخدام المنتظم.</p>"
+          }
+        },
+        "question_P7AbQB": {
+          "type": "question",
+          "settings": {
+            "title": "هل يناسب جميع أنواع البشرة؟",
+            "text": "<p>نعم، الجهاز مناسب لجميع أنواع البشرة. لكن إذا كانت لديك بشرة حساسة جداً أو حالات جلدية معينة، يُنصح باستشارة طبيب الجلدية قبل الاستخدام.</p>"
           }
         }
       },
       "block_order": [
+        "question_M7TqYW",
         "question_yqHqK6",
         "question_7XFnnm",
         "question_QTiLt3",
-        "question_HCUMMj"
+        "question_HCUMMj",
+        "question_P7AbQB"
       ],
       "name": "t:sections.faq.presets.name",
       "settings": {
         "narrow": false,
         "secondary_background": false,
         "show_divider": false,
-        "heading": "FAQs",
+        "heading": "الأسئلة الشائعة",
         "heading_size": "h1",
-        "heading_alignment": "left",
+        "heading_alignment": "center",
         "heading_tag": "h2",
         "padding_top": 36,
         "padding_bottom": 36
