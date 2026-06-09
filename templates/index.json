@@ -15,17 +15,17 @@
         "slide-2": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/1000831905.png",
+            "image": "shopify://shop_images/9022a705161ff42b7879d88f1fd6d0e8.png",
             "image_position": "center center",
             "text_box_position": "bottom-right",
-            "subheading": "",
+            "subheading": "شدّي، نحّتي، وأشرقي — نتائج مرئية من الأسبوع الأول",
             "subheading_size": "h5",
-            "heading": "",
+            "heading": "⚡ تقنية EMS + LED في جهاز واحد",
             "heading_size": "h0",
             "heading_tag": "h2",
             "text": "",
             "text_size": "typeset2",
-            "button_label": "",
+            "button_label": "اكتشفي الجهاز",
             "button_link": "",
             "button_size": "medium",
             "button_style_secondary": false
@@ -63,17 +63,17 @@
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "collection": "frontpage",
-        "products_to_show": 4,
+        "products_to_show": 2,
         "horizontal_scroll": false,
         "show_view_all": true,
         "show_divider": false,
-        "heading": "Featured collection",
+        "heading": "✨ اكتشفي جهاز ALMAS",
         "heading_size": "h1",
-        "heading_alignment": "left",
+        "heading_alignment": "center",
         "heading_tag": "h2",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "image_position": "center center",
         "enable_image_fill": true,
         "show_secondary_image": false,
@@ -126,7 +126,7 @@
         "heading_NEyD4Q": {
           "type": "heading",
           "settings": {
-            "heading": "AT ALMAS BEAUTY",
+            "heading": "🚚 توصيل سريع إلى لبنان | ✅ ضمان الجودة | 💳 دفع آمن",
             "heading_size": "h1",
             "heading_tag": "h2"
           }
@@ -134,7 +134,7 @@
         "text_z3jQfd": {
           "type": "text",
           "settings": {
-            "text": "<p>we believe great products should make everyday life easier, smarter, and more enjoyable. That's why we carefully select innovative, high-quality items that bring real value to our customers. From trending essentials to unique finds, we're committed to providing products you'll love and service you can trust. 💖</p><p><strong>Your satisfaction is our priority, every step of the way.</strong> ✨</p>",
+            "text": "<p><strong>جهاز ALMAS الذكي</strong> هو الحل الأمثل للعناية بالبشرة من المنزل. يجمع بين تقنية <strong>EMS المتقدمة</strong> و<strong>LED العلاجية</strong> لشد الوجه والرقبة بفعالية مثبتة سريرياً.</p><p>✨ <strong>نتائج مرئية في أسابيع قليلة</strong> — تحسين مرونة البشرة، تقليل الخطوط الدقيقة، وإشراقة طبيعية.</p><p>🏆 <strong>موثوق من آلاف العملاء اللبنانيين</strong> — ضمان جودة كامل وخدمة عملاء متميزة.</p><p><strong>استثمري في جمالك اليوم!</strong> 💖</p>",
             "text_size": "typeset2",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -148,7 +148,7 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "text_alignment": "left",
+        "text_alignment": "center",
         "mobile_text_alignment": "left",
         "horizontal_content": false,
         "narrow": false,
@@ -199,41 +199,65 @@
     "faq_VkHiGm": {
       "type": "faq",
       "blocks": {
+        "question_Dkx9LX": {
+          "type": "question",
+          "settings": {
+            "title": "كيف أشحن الجهاز؟",
+            "text": "<p>يُشحن الجهاز عبر كابل USB المرفق. وقت الشحن الكامل حوالي 1-2 ساعة، ويعمل لعدة جلسات على شحنة واحدة.</p>"
+          }
+        },
+        "question_ny9Hb4": {
+          "type": "question",
+          "settings": {
+            "title": "هل يناسب جميع أنواع البشرة؟",
+            "text": "<p>نعم، الجهاز مناسب لجميع أنواع البشرة. لكن إذا كانت لديك بشرة حساسة جداً أو حالات جلدية معينة، يُنصح باستشارة طبيب الجلدية قبل الاستخدام.</p>"
+          }
+        },
         "question_yNkDQY": {
           "type": "question",
           "settings": {
-            "title": "How can I contact customer support?",
-            "text": "<p>You can reach our support team anytime through WhatsApp. We're happy to help with any questions about your order or our products.</p><h3></h3>"
+            "title": "كيف أستخدم جهاز ALMAS؟",
+            "text": "<p>نظّفي وجهك ورقبتك جيداً، ثم ضعي السيروم أو الكريم المرطب. شغّلي الجهاز واختاري مستوى الشدة المناسب، ودلّكي بحركات تصاعدية لطيفة لمدة 5-10 دقائق يومياً للحصول على أفضل النتائج.</p>"
           }
         },
         "question_YmRBPG": {
           "type": "question",
           "settings": {
-            "title": "How long does shipping take?",
-            "text": "<p>Most orders are delivered within <strong>5–7 business days</strong>, depending on your location.</p><h3></h3>"
+            "title": "هل يمكن استخدام السيروم أو الكريم مع الجهاز؟",
+            "text": "<p>نعم، بل يُنصح بذلك! الجهاز يعزز امتصاص السيروم والكريمات بشكل أعمق وأسرع بفضل تقنية الاهتزاز والميكروكيرنت. استخدمي سيروم الهيالورونيك أو أي كريم مرطب تفضلينه.</p>"
           }
         },
         "question_9WMfD8": {
           "type": "question",
           "settings": {
-            "title": "Are your products safe to use?",
-            "text": "<p>Yes! We carefully select products that are designed to be safe, reliable, and easy to use when following the provided instructions.</p><h3></h3>"
+            "title": "هل الجهاز آمن للاستخدام اليومي؟",
+            "text": "<p>نعم، الجهاز مصمم للاستخدام اليومي بأمان. يحتوي على 3 مستويات شدة — ابدئي بالمستوى الأول إذا كانت هذه تجربتك الأولى مع أجهزة التجميل.</p>"
+          }
+        },
+        "question_BUnLCa": {
+          "type": "question",
+          "settings": {
+            "title": "متى تظهر النتائج؟",
+            "text": "<p>تلاحظين فرقاً في نضارة البشرة من الأسبوع الأول، أما النتائج الكاملة في الشد والنحت فتظهر عادةً بعد 4-6 أسابيع من الاستخدام المنتظم.</p>"
           }
         }
       },
       "block_order": [
+        "question_Dkx9LX",
+        "question_ny9Hb4",
         "question_yNkDQY",
         "question_YmRBPG",
-        "question_9WMfD8"
+        "question_9WMfD8",
+        "question_BUnLCa"
       ],
       "name": "t:sections.faq.presets.name",
       "settings": {
         "narrow": false,
         "secondary_background": false,
         "show_divider": false,
-        "heading": "FAQs",
+        "heading": "الأسئلة الشائعة",
         "heading_size": "h1",
-        "heading_alignment": "left",
+        "heading_alignment": "center",
         "heading_tag": "h2",
         "padding_top": 36,
         "padding_bottom": 36
