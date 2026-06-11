@@ -196,7 +196,7 @@
         "heading_r7Wwa6": {
           "type": "heading",
           "settings": {
-            "heading": "Reveal Your Natural Glow",
+            "heading": "أظهري توهجك الطبيعي",
             "heading_size": "h1",
             "heading_tag": "h2"
           }
@@ -204,7 +204,7 @@
         "text_txn6Gr": {
           "type": "text",
           "settings": {
-            "text": "<p>Give your skin the care it deserves. Advanced beauty technology helps your skin look smoother, brighter, and more refreshed with every use.</p><h3></h3>",
+            "text": "<p>امنحي بشرتك العناية التي تستحقها. تقنية التجميل المتقدمة تساعد بشرتك على أن تبدو أكثر نعومة وإشراقاً وانتعاشاً مع كل استخدام.</p>",
             "text_size": "typeset2",
             "secondary_color": false
           }
@@ -250,7 +250,7 @@
             "icon": "none",
             "icon_size": "medium",
             "custom_icon": "",
-            "text": "Radiance is confidence made visible",
+            "text": "الإشراق هو الثقة التي تراها العيون",
             "text_size": 20,
             "link": ""
           }
@@ -279,7 +279,7 @@
         "heading_NVjMGc": {
           "type": "heading",
           "settings": {
-            "heading": "Lift, Firm & Refresh",
+            "heading": "شدّي، قوّي وانتعشي",
             "heading_size": "h1",
             "heading_tag": "h2"
           }
@@ -287,7 +287,7 @@
         "text_xqVGMr": {
           "type": "text",
           "settings": {
-            "text": "<p>Enjoy a relaxing skincare experience designed to support a firmer, more youthful-looking appearance from the comfort of your home.</p>",
+            "text": "<p>استمتعي بتجربة عناية بالبشرة مريحة مصممة لدعم مظهر أكثر شباباً وإشراقاً من راحة منزلك.</p>",
             "text_size": "typeset2",
             "secondary_color": false
           }
