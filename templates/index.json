@@ -9,6 +9,95 @@
  */
 {
   "sections": {
+    "blocks_wJ9ATi": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_79c28ba_CXJeG8": {
+          "type": "ai_gen_block_79c28ba",
+          "settings": {
+            "title": "نتائج حقيقية - قبل وبعد",
+            "title_alignment": "center",
+            "image_1": "https://cdn.shopify.com/s/files/1/0746/5133/6893/files/1000846442.jpg",
+            "image_1_alt": "Before and after result 1",
+            "image_2": "https://cdn.shopify.com/s/files/1/0746/5133/6893/files/1000846444.jpg",
+            "image_2_alt": "Before and after result 2",
+            "image_3": "https://cdn.shopify.com/s/files/1/0746/5133/6893/files/1000846441.png",
+            "image_3_alt": "Before and after result 3",
+            "image_4": "https://cdn.shopify.com/s/files/1/0746/5133/6893/files/1000846443_1.png",
+            "image_4_alt": "Before and after result 4",
+            "desktop_columns": 4,
+            "grid_gap": 12,
+            "max_width": 1200,
+            "background_color": "#ffffff",
+            "title_color": "#1a1b18",
+            "title_size": 24,
+            "title_spacing": 24,
+            "image_background": "#f3f3f3",
+            "image_border_radius": 8,
+            "section_padding_top": 40,
+            "section_padding_bottom": 40
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_79c28ba_CXJeG8"
+      ],
+      "name": "Before & After results",
+      "settings": {}
+    },
+    "guarantees_wg4VNt": {
+      "type": "guarantees",
+      "blocks": {
+        "guarantee_ReQWCe": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "check_mark",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "الدفع عند الاستلام",
+            "title_size": "h3",
+            "text": "<p>💳 الدفع عند الاستلام متاح على جميع الطلبات. ادفعي فقط عند استلام منتجك بأمان.</p>"
+          }
+        },
+        "guarantee_TacGAz": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "توصيل سريع",
+            "title_size": "h3",
+            "text": "<p>🚚 توصيل مجاني وسريع إلى جميع أنحاء لبنان خلال 2-3 أيام عمل.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "guarantee_ReQWCe",
+        "guarantee_TacGAz"
+      ],
+      "name": "t:sections.guarantees.presets.name",
+      "settings": {
+        "layout": "default",
+        "column_alignment": "left",
+        "horizontal_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "columns_desktop": 4,
+        "heading": "لماذا تختارين ALMAS؟",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "use_custom_colors": false,
+        "colors_icon": "#ffffff",
+        "colors_text": "#1a1b18",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "custom_liquid_6eyMWd": {
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
@@ -31,14 +120,14 @@
             "text_box_position": "bottom-right",
             "subheading": "شدّي، نحّتي، وأشرقي — نتائج مرئية من الأسبوع الأول",
             "subheading_size": "h5",
-            "heading": "⚡ تقنية EMS + LED في جهاز واحد",
+            "heading": "✨ تقنية EMS + LED المتقدمة",
             "heading_size": "h0",
             "heading_tag": "h2",
-            "text": "",
+            "text": "جهاز ALMAS الثوري يجمع بين تقنية EMS والضوء الأحمر LED لشد الوجه والرقبة بشكل طبيعي وآمن. مستخدم من قبل آلاف النساء اللبنانيات.",
             "text_size": "typeset2",
-            "button_label": "اكتشفي الجهاز",
+            "button_label": "اكتشفي الآن",
             "button_link": "shopify://products/neck-and-face-wrinkle-remover",
-            "button_size": "medium",
+            "button_size": "large",
             "button_style_secondary": false
           }
         }
@@ -54,7 +143,7 @@
         "autorotate_speed": 5,
         "full_width": true,
         "image_behavior": "none",
-        "mobile_text_alignment": "left",
+        "mobile_text_alignment": "center",
         "mobile_image_ratio": "adapt_first",
         "show_text_below": false,
         "colors_button_label": "#1a1b18",
@@ -74,11 +163,11 @@
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "collection": "frontpage",
-        "products_to_show": 2,
+        "products_to_show": 4,
         "horizontal_scroll": false,
         "show_view_all": true,
         "show_divider": false,
-        "heading": "✨ اكتشفي جهاز ALMAS",
+        "heading": "✨ منتجات ALMAS الأكثر مبيعاً",
         "heading_size": "h1",
         "heading_alignment": "center",
         "heading_tag": "h2",
@@ -277,15 +366,26 @@
     "guarantees_QbnCCW": {
       "type": "guarantees",
       "blocks": {
+        "guarantee_fjqBf7": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "return",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "ضمان الرضا 30 يوم",
+            "title_size": "h3",
+            "text": "<p>غير راضية؟ استرجعي منتجك خلال 30 يوم للحصول على استرجاع كامل بدون أسئلة.</p>"
+          }
+        },
         "guarantee_ej4aWF": {
           "type": "guarantee",
           "settings": {
             "icon": "truck",
             "icon_size": "medium",
             "custom_icon": "",
-            "title": "توصيل لجميع أنحاء لبنان",
+            "title": "توصيل سريع لكل لبنان",
             "title_size": "h3",
-            "text": ""
+            "text": "<p>توصيل مجاني وسريع إلى جميع أنحاء لبنان. نضمن وصول منتجاتك بأمان وفي أسرع وقت.</p>"
           }
         },
         "guarantee_g6xKng": {
@@ -294,15 +394,28 @@
             "icon": "chat_bubble",
             "icon_size": "medium",
             "custom_icon": "",
-            "title": "دعم على مدار الساعة",
+            "title": "دعم عملاء متميز",
             "title_size": "h3",
-            "text": ""
+            "text": "<p>فريق دعم متخصص متاح 24/7 للإجابة على جميع أسئلتك والمساعدة في اختيار المنتج المناسب.</p>"
+          }
+        },
+        "guarantee_cpTzgP": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "shield",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "منتجات أصلية 100%",
+            "title_size": "h3",
+            "text": "<p>جميع منتجاتنا أصلية وموثوقة. نضمن جودة عالية وفعالية مثبتة سريرياً.</p>"
           }
         }
       },
       "block_order": [
+        "guarantee_fjqBf7",
         "guarantee_ej4aWF",
-        "guarantee_g6xKng"
+        "guarantee_g6xKng",
+        "guarantee_cpTzgP"
       ],
       "name": "t:sections.guarantees.presets.name",
       "settings": {
@@ -312,7 +425,7 @@
         "full_width": false,
         "show_divider": false,
         "columns_desktop": 4,
-        "heading": "Guarantees",
+        "heading": "لماذا تختارين ALMAS؟",
         "heading_size": "h1",
         "heading_tag": "h2",
         "columns_mobile": "2",
@@ -332,6 +445,8 @@
     }
   },
   "order": [
+    "blocks_wJ9ATi",
+    "guarantees_wg4VNt",
     "custom_liquid_6eyMWd",
     "slideshow",
     "featured_collection_RtgRw4",
