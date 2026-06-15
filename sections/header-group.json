@@ -17,8 +17,8 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Delivery All Over  Lebanon",
-            "text_on_mobile": "",
+            "text": "✨ توصيل مجاني لكل لبنان | دعم 24/7 | منتجات أصلية 100%",
+            "text_on_mobile": "✨ توصيل مجاني | دعم 24/7",
             "text_size": 13,
             "link": ""
           }
@@ -31,7 +31,7 @@
         "only_homepage": false,
         "layout": "default",
         "mobile_layout": "marquee",
-        "autorotate": true,
+        "autorotate": false,
         "autorotate_speed": 5,
         "show_navigation": true,
         "direction": "left",
