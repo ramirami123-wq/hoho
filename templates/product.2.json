@@ -9,6 +9,87 @@
  */
 {
   "sections": {
+    "gallery_jhhxWF": {
+      "type": "gallery",
+      "blocks": {
+        "image_GaUMmD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1000846442_2a9f1346-5f5e-4c55-a2eb-161faa4478ce.jpg",
+            "image_position": "center center",
+            "subheading": "Subheading",
+            "subheading_size": "h5",
+            "heading": "Tell your story",
+            "heading_size": "h3",
+            "link": "",
+            "text_box_position": "bottom-left"
+          }
+        },
+        "image_9cBUf7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1000846444_f78d8ac1-9b5d-402a-a246-7e45435f8636.jpg",
+            "image_position": "center center",
+            "subheading": "Subheading",
+            "subheading_size": "h5",
+            "heading": "Tell your story",
+            "heading_size": "h3",
+            "link": "",
+            "text_box_position": "bottom-left"
+          }
+        },
+        "image_Wj8Yfm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1000846441_15fa5a5f-8f82-4630-ab8c-b5e76fa11b8a.png",
+            "image_position": "center center",
+            "subheading": "Subheading",
+            "subheading_size": "h5",
+            "heading": "Tell your story",
+            "heading_size": "h3",
+            "link": "",
+            "text_box_position": "bottom-left"
+          }
+        },
+        "image_XyiYjg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1000846443_1_a5b4e773-1c84-4719-80fe-32c6951f9d60.png",
+            "image_position": "center center",
+            "subheading": "Subheading",
+            "subheading_size": "h5",
+            "heading": "Tell your story",
+            "heading_size": "h3",
+            "link": "",
+            "text_box_position": "bottom-left"
+          }
+        }
+      },
+      "block_order": [
+        "image_GaUMmD",
+        "image_9cBUf7",
+        "image_Wj8Yfm",
+        "image_XyiYjg"
+      ],
+      "name": "t:sections.gallery.presets.name",
+      "settings": {
+        "per_row": 2,
+        "spacing_images": 8,
+        "image_height": 300,
+        "apply_overlay": false,
+        "full_width": false,
+        "show_divider": false,
+        "heading": "نتائج حقيقية ✨ قبل وبعد",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "mobile_image_height": 200,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "empty-space": {
       "type": "empty-space",
       "settings": {
@@ -513,6 +594,7 @@
   "order": [
     "empty-space",
     "main",
+    "gallery_jhhxWF",
     "scrolling_promotion_ehCeVr",
     "product-recommendations",
     "image_with_text_9FdKWE",
