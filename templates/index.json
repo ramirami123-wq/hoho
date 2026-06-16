@@ -15,15 +15,15 @@
         "slide-2": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/9022a705161ff42b7879d88f1fd6d0e8.png",
+            "image": "shopify://shop_images/almas-banner_8ea0c1c9-629f-4549-8d5a-6b3637f1b4a3.png",
             "image_position": "center center",
             "text_box_position": "bottom-right",
             "subheading": "شدّي، نحّتي، وأشرقي — نتائج مرئية من الأسبوع الأول",
             "subheading_size": "h4",
             "heading": "✨ تقنية EMS + LED المتقدمة",
-            "heading_size": "h0",
+            "heading_size": "h2",
             "heading_tag": "h2",
-            "text": "جهاز ALMAS الثوري يجمع بين تقنية EMS والضوء الأحمر LED لشد الوجه والرقبة بشكل طبيعي وآمن. مستخدم من قبل آلاف النساء اللبنانيات.",
+            "text": "جهاز ALMAS الثوري يجمع بين تقنية EMS والضوء الأحمر LED لشد الوجه والرقبة بشكل طبيعي وآمن. الشحن مجاني في لبنان.",
             "text_size": "typeset2",
             "button_label": "اكتشفي الآن",
             "button_link": "shopify://products/neck-and-face-wrinkle-remover",
