@@ -296,73 +296,6 @@
         "padding_bottom": 20
       }
     },
-    "faq_VkHiGm": {
-      "type": "faq",
-      "blocks": {
-        "question_Dkx9LX": {
-          "type": "question",
-          "settings": {
-            "title": "كيف يتم شحن الجهاز؟",
-            "text": "<p>يتم الشحن عبر كابل USB، ويحتاج من 1 إلى 2 ساعة للشحن الكامل، ويكفي لعدة جلسات.</p>"
-          }
-        },
-        "question_ny9Hb4": {
-          "type": "question",
-          "settings": {
-            "title": "هل يناسب جميع أنواع البشرة؟",
-            "text": "<p>نعم، يناسب جميع أنواع البشرة. ننصح أصحاب البشرة الحساسة أو من لديهم حالات طبية باستشارة طبيب الجلدية قبل الاستخدام.</p>"
-          }
-        },
-        "question_yNkDQY": {
-          "type": "question",
-          "settings": {
-            "title": "كيف أستخدم جهاز ALMAS؟",
-            "text": "<p>نظّفي وجهك ورقبتك، ضعي سيروم أو كريم، ثم شغّلي الجهاز واستخدميه لمدة 5 إلى 10 دقائق يومياً.</p>"
-          }
-        },
-        "question_YmRBPG": {
-          "type": "question",
-          "settings": {
-            "title": "هل يمكن استخدام سيروم أو كريم مع الجهاز؟",
-            "text": "<p>نعم، الاهتزاز والتيار الكهربائي الدقيق يعززان امتصاص المنتجات بشكل أفضل.</p>"
-          }
-        },
-        "question_9WMfD8": {
-          "type": "question",
-          "settings": {
-            "title": "هل الجهاز آمن للاستخدام اليومي؟",
-            "text": "<p>نعم، يحتوي على 3 مستويات للشدة. ننصح بالبدء بالمستوى المنخفض.</p>"
-          }
-        },
-        "question_BUnLCa": {
-          "type": "question",
-          "settings": {
-            "title": "متى تظهر النتائج؟",
-            "text": "<p>ستلاحظين فرقاً في إشراقة البشرة من الأسبوع الأول، والنتائج الكاملة تظهر خلال 4 إلى 6 أسابيع.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "question_Dkx9LX",
-        "question_ny9Hb4",
-        "question_yNkDQY",
-        "question_YmRBPG",
-        "question_9WMfD8",
-        "question_BUnLCa"
-      ],
-      "name": "t:sections.faq.presets.name",
-      "settings": {
-        "narrow": false,
-        "secondary_background": true,
-        "show_divider": true,
-        "heading": "الأسئلة الشائعة",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "heading_tag": "h2",
-        "padding_top": 48,
-        "padding_bottom": 48
-      }
-    },
     "guarantees_QbnCCW": {
       "type": "guarantees",
       "blocks": {
@@ -442,6 +375,73 @@
     "17812044383b83cd38": {
       "type": "_blocks",
       "settings": {}
+    },
+    "faq_VkHiGm": {
+      "type": "faq",
+      "blocks": {
+        "question_Dkx9LX": {
+          "type": "question",
+          "settings": {
+            "title": "كيف يتم شحن الجهاز؟",
+            "text": "<p>يتم الشحن عبر كابل USB، ويحتاج من 1 إلى 2 ساعة للشحن الكامل، ويكفي لعدة جلسات.</p>"
+          }
+        },
+        "question_ny9Hb4": {
+          "type": "question",
+          "settings": {
+            "title": "هل يناسب جميع أنواع البشرة؟",
+            "text": "<p>نعم، يناسب جميع أنواع البشرة. ننصح أصحاب البشرة الحساسة أو من لديهم حالات طبية باستشارة طبيب الجلدية قبل الاستخدام.</p>"
+          }
+        },
+        "question_yNkDQY": {
+          "type": "question",
+          "settings": {
+            "title": "كيف أستخدم جهاز ALMAS؟",
+            "text": "<p>نظّفي وجهك ورقبتك، ضعي سيروم أو كريم، ثم شغّلي الجهاز واستخدميه لمدة 5 إلى 10 دقائق يومياً.</p>"
+          }
+        },
+        "question_YmRBPG": {
+          "type": "question",
+          "settings": {
+            "title": "هل يمكن استخدام سيروم أو كريم مع الجهاز؟",
+            "text": "<p>نعم، الاهتزاز والتيار الكهربائي الدقيق يعززان امتصاص المنتجات بشكل أفضل.</p>"
+          }
+        },
+        "question_9WMfD8": {
+          "type": "question",
+          "settings": {
+            "title": "هل الجهاز آمن للاستخدام اليومي؟",
+            "text": "<p>نعم، يحتوي على 3 مستويات للشدة. ننصح بالبدء بالمستوى المنخفض.</p>"
+          }
+        },
+        "question_BUnLCa": {
+          "type": "question",
+          "settings": {
+            "title": "متى تظهر النتائج؟",
+            "text": "<p>ستلاحظين فرقاً في إشراقة البشرة من الأسبوع الأول، والنتائج الكاملة تظهر خلال 4 إلى 6 أسابيع.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_Dkx9LX",
+        "question_ny9Hb4",
+        "question_yNkDQY",
+        "question_YmRBPG",
+        "question_9WMfD8",
+        "question_BUnLCa"
+      ],
+      "name": "t:sections.faq.presets.name",
+      "settings": {
+        "narrow": false,
+        "secondary_background": true,
+        "show_divider": true,
+        "heading": "الأسئلة الشائعة",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
     }
   },
   "order": [
@@ -453,8 +453,8 @@
     "scrolling_promotion_gqQrxK",
     "rich_text_iPTEGL",
     "scrolling_promotion_yJEgih",
-    "faq_VkHiGm",
     "guarantees_QbnCCW",
-    "17812044383b83cd38"
+    "17812044383b83cd38",
+    "faq_VkHiGm"
   ]
 }
