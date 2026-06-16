@@ -9,6 +9,55 @@
  */
 {
   "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/9022a705161ff42b7879d88f1fd6d0e8.png",
+            "image_position": "center center",
+            "text_box_position": "bottom-right",
+            "subheading": "شدّي، نحّتي، وأشرقي — نتائج مرئية من الأسبوع الأول",
+            "subheading_size": "h4",
+            "heading": "✨ تقنية EMS + LED المتقدمة",
+            "heading_size": "h0",
+            "heading_tag": "h2",
+            "text": "جهاز ALMAS الثوري يجمع بين تقنية EMS والضوء الأحمر LED لشد الوجه والرقبة بشكل طبيعي وآمن. مستخدم من قبل آلاف النساء اللبنانيات.",
+            "text_size": "typeset2",
+            "button_label": "اكتشفي الآن",
+            "button_link": "shopify://products/neck-and-face-wrinkle-remover",
+            "button_size": "large",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "slide-2"
+      ],
+      "settings": {
+        "slideshow_type": "legacy",
+        "text_alignment": "left",
+        "image_ratio": "100vh",
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "full_width": true,
+        "image_behavior": "none",
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "adapt_first",
+        "show_text_below": false,
+        "colors_button_label": "#1a1b18",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_background": "#ffffff",
+        "colors_overlay": "#1a1b18",
+        "colors_overlay_opacity": 16,
+        "colors_navigation_text": "#ffffff",
+        "colors_navigation_background": "#1a1b18",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
     "blocks_wJ9ATi": {
       "type": "_blocks",
       "blocks": {
@@ -98,66 +147,6 @@
         "padding_bottom": 36
       }
     },
-    "custom_liquid_6eyMWd": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "",
-        "full_width": false,
-        "show_divider": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "slideshow": {
-      "type": "slideshow",
-      "blocks": {
-        "slide-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/9022a705161ff42b7879d88f1fd6d0e8.png",
-            "image_position": "center center",
-            "text_box_position": "bottom-right",
-            "subheading": "شدّي، نحّتي، وأشرقي — نتائج مرئية من الأسبوع الأول",
-            "subheading_size": "h5",
-            "heading": "✨ تقنية EMS + LED المتقدمة",
-            "heading_size": "h0",
-            "heading_tag": "h2",
-            "text": "جهاز ALMAS الثوري يجمع بين تقنية EMS والضوء الأحمر LED لشد الوجه والرقبة بشكل طبيعي وآمن. مستخدم من قبل آلاف النساء اللبنانيات.",
-            "text_size": "typeset2",
-            "button_label": "اكتشفي الآن",
-            "button_link": "shopify://products/neck-and-face-wrinkle-remover",
-            "button_size": "large",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "slide-2"
-      ],
-      "settings": {
-        "slideshow_type": "legacy",
-        "text_alignment": "left",
-        "image_ratio": "100vh",
-        "autorotate": false,
-        "autorotate_speed": 5,
-        "full_width": true,
-        "image_behavior": "none",
-        "mobile_text_alignment": "center",
-        "mobile_image_ratio": "adapt_first",
-        "show_text_below": false,
-        "colors_button_label": "#1a1b18",
-        "colors_button_background": "#ffffff",
-        "colors_text": "#ffffff",
-        "colors_background": "#ffffff",
-        "colors_overlay": "#1a1b18",
-        "colors_overlay_opacity": 16,
-        "colors_navigation_text": "#ffffff",
-        "colors_navigation_background": "#1a1b18",
-        "padding_top": 0,
-        "padding_bottom": 36
-      }
-    },
     "featured_collection_RtgRw4": {
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
@@ -188,6 +177,17 @@
         "padding_bottom": 36
       }
     },
+    "custom_liquid_6eyMWd": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "full_width": false,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "scrolling_promotion_gqQrxK": {
       "type": "scrolling-promotion",
       "blocks": {
@@ -197,7 +197,7 @@
             "icon": "none",
             "icon_size": "medium",
             "custom_icon": "",
-            "text": "Smart products. Better everyday living",
+            "text": "منتجات ذكية. حياة أجمل كل يوم.",
             "text_size": 20,
             "link": ""
           }
@@ -234,7 +234,7 @@
         "text_z3jQfd": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>جهاز ALMAS الذكي</strong> هو الحل الأمثل للعناية بالبشرة من المنزل. يجمع بين تقنية <strong>EMS المتقدمة</strong> و<strong>LED العلاجية</strong> لشد الوجه والرقبة بفعالية مثبتة سريرياً.</p><p>✨ <strong>نتائج مرئية في أسابيع قليلة</strong> — تحسين مرونة البشرة، تقليل الخطوط الدقيقة، وإشراقة طبيعية.</p><p>🏆 <strong>موثوق من آلاف العملاء اللبنانيين</strong> — ضمان جودة كامل وخدمة عملاء متميزة.</p><p><strong>استثمري في جمالك اليوم!</strong> 💖</p>",
+            "text": "<p><strong>جهاز ALMAS الذكي</strong> هو الحل الأمثل للعناية بالبشرة من المنزل. يجمع بين تقنية <strong>EMS المتقدمة</strong> و<strong>LED العلاجية</strong> لشد الوجه والرقبة بفعالية مثبتة سريرياً.</p><p>✨ <strong>نتائج مرئية في أسابيع قليلة</strong> — تحسين مرونة البشرة، تقليل الخطوط الدقيقة، وإشراقة طبيعية.</p><p>🏆 <strong>موثوق من عملاء يثقون بـ ALMAS في لبنان</strong> — ضمان جودة كامل وخدمة عملاء متميزة.</p><p><strong>استثمري في جمالك اليوم!</strong> 💖</p>",
             "text_size": "typeset2",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -273,7 +273,7 @@
             "icon": "none",
             "icon_size": "medium",
             "custom_icon": "",
-            "text": "Delivery All Over  Lebanon",
+            "text": "توصيل مجاني لجميع مناطق لبنان.",
             "text_size": 20,
             "link": ""
           }
@@ -445,11 +445,11 @@
     }
   },
   "order": [
+    "slideshow",
     "blocks_wJ9ATi",
     "guarantees_wg4VNt",
-    "custom_liquid_6eyMWd",
-    "slideshow",
     "featured_collection_RtgRw4",
+    "custom_liquid_6eyMWd",
     "scrolling_promotion_gqQrxK",
     "rich_text_iPTEGL",
     "scrolling_promotion_yJEgih",

@@ -14,6 +14,15 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_DxHjz8": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "text_on_mobile": "",
+            "text_size": 13,
+            "link": ""
+          }
+        },
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
@@ -25,6 +34,7 @@
         }
       },
       "block_order": [
+        "announcement_DxHjz8",
         "announcement-bar-0"
       ],
       "settings": {
