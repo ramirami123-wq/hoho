@@ -100,6 +100,7 @@
       "blocks": {
         "guarantee_ReQWCe": {
           "type": "guarantee",
+          "disabled": true,
           "settings": {
             "icon": "check_mark",
             "icon_size": "medium",
@@ -111,6 +112,7 @@
         },
         "guarantee_TacGAz": {
           "type": "guarantee",
+          "disabled": true,
           "settings": {
             "icon": "truck",
             "icon_size": "medium",
@@ -125,6 +127,7 @@
         "guarantee_ReQWCe",
         "guarantee_TacGAz"
       ],
+      "disabled": true,
       "name": "t:sections.guarantees.presets.name",
       "settings": {
         "layout": "default",
@@ -296,6 +299,10 @@
         "padding_bottom": 20
       }
     },
+    "17812044383b83cd38": {
+      "type": "_blocks",
+      "settings": {}
+    },
     "guarantees_QbnCCW": {
       "type": "guarantees",
       "blocks": {
@@ -371,10 +378,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "17812044383b83cd38": {
-      "type": "_blocks",
-      "settings": {}
     },
     "faq_VkHiGm": {
       "type": "faq",
@@ -453,8 +456,8 @@
     "scrolling_promotion_gqQrxK",
     "rich_text_iPTEGL",
     "scrolling_promotion_yJEgih",
-    "guarantees_QbnCCW",
     "17812044383b83cd38",
+    "guarantees_QbnCCW",
     "faq_VkHiGm"
   ]
 }
