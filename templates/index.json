@@ -211,7 +211,7 @@
       ],
       "name": "t:sections.scrolling-promotion.presets.name",
       "settings": {
-        "direction": "left",
+        "direction": "right",
         "speed": 1.6,
         "show_divider": false,
         "use_custom_colors": true,
@@ -287,7 +287,7 @@
       ],
       "name": "t:sections.scrolling-promotion.presets.name",
       "settings": {
-        "direction": "left",
+        "direction": "right",
         "speed": 1.6,
         "show_divider": false,
         "use_custom_colors": true,
