@@ -475,6 +475,43 @@
         "ai_gen_block_f7525d5_PTAqMb"
       ],
       "settings": {}
+    },
+    "1782158185c471a07a": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_450dd8c_EddEYy": {
+          "type": "ai_gen_block_450dd8c",
+          "settings": {
+            "show_label": true,
+            "price_label": "Price",
+            "label_size": 12,
+            "price_size": 48,
+            "price_weight": "700",
+            "price_font": "assistant_n4",
+            "compare_size": 20,
+            "alignment": "flex-start",
+            "desktop_width_percent": 100,
+            "show_sale_badge": true,
+            "badge_type": "percentage",
+            "badge_text": "Sale",
+            "badge_size": 12,
+            "badge_radius": 4,
+            "price_color": "#f89db5",
+            "label_color": "#212326",
+            "compare_color": "#212326",
+            "badge_bg_color": "#f89db5",
+            "badge_text_color": "#ffffff",
+            "background_color": "#ffffff",
+            "padding": 0,
+            "border_radius": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_450dd8c_EddEYy"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -489,6 +526,7 @@
     "17812044383b83cd38",
     "guarantees_QbnCCW",
     "faq_VkHiGm",
-    "17821579167c50a88b"
+    "17821579167c50a88b",
+    "1782158185c471a07a"
   ]
 }
