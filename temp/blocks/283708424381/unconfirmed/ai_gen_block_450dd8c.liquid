@@ -1,6 +1,410 @@
+{% doc %}
+  @prompt
+    Make the product price more prominent and visually striking on the product page. Increase the font size of the price, make it bold, and use a strong accent color that matches the theme's brand palette to make it stand out clearly for customers.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-prominent-price-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+  }
+
+  .ai-prominent-price__container-{{ ai_gen_id }} {
+    display: flex;
+    align-items: {{ block.settings.alignment }};
+    justify-content: {{ block.settings.alignment }};
+    gap: 12px;
+    padding: {{ block.settings.padding }}px;
+    background-color: {{ block.settings.background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  .ai-prominent-price__wrapper-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .ai-prominent-price__label-{{ ai_gen_id }} {
+    font-size: {{ block.settings.label_size }}px;
+    color: {{ block.settings.label_color }};
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .ai-prominent-price__price-{{ ai_gen_id }} {
+    font-size: {{ block.settings.price_size }}px;
+    font-weight: {{ block.settings.price_weight }};
+    color: {{ block.settings.price_color }};
+    line-height: 1.2;
+    font-family: {{ block.settings.price_font.family }}, {{ block.settings.price_font.fallback_families }};
+    font-style: {{ block.settings.price_font.style }};
+  }
+
+  .ai-prominent-price__compare-{{ ai_gen_id }} {
+    font-size: {{ block.settings.compare_size }}px;
+    color: {{ block.settings.compare_color }};
+    text-decoration: line-through;
+    opacity: 0.7;
+  }
+
+  .ai-prominent-price__badge-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    background-color: {{ block.settings.badge_bg_color }};
+    color: {{ block.settings.badge_text_color }};
+    font-size: {{ block.settings.badge_size }}px;
+    font-weight: 700;
+    border-radius: {{ block.settings.badge_radius }}px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-prominent-price__price-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.price_size }}px * 0.8);
+    }
+
+    .ai-prominent-price__label-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.label_size }}px * 0.9);
+    }
+
+    .ai-prominent-price__compare-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.compare_size }}px * 0.9);
+    }
+  }
+{% endstyle %}
+
+<prominent-price-{{ ai_gen_id }}
+  class="ai-prominent-price-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-prominent-price__container-{{ ai_gen_id }}">
+    <div class="ai-prominent-price__wrapper-{{ ai_gen_id }}">
+      {% if block.settings.show_label %}
+        <div class="ai-prominent-price__label-{{ ai_gen_id }}">
+          {{ block.settings.price_label }}
+        </div>
+      {% endif %}
+
+      <div class="ai-prominent-price__price-{{ ai_gen_id }}">
+        {% if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price %}
+          <span class="ai-prominent-price__compare-{{ ai_gen_id }}">
+            {{ product.selected_or_first_available_variant.compare_at_price | money }}
+          </span>
+        {% endif %}
+        {{ product.selected_or_first_available_variant.price | money }}
+      </div>
+    </div>
+
+    {% if block.settings.show_sale_badge and product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price %}
+      {% assign savings = product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price %}
+      {% assign savings_percent = savings | times: 100.0 | divided_by: product.selected_or_first_available_variant.compare_at_price | round %}
+      <div class="ai-prominent-price__badge-{{ ai_gen_id }}">
+        {% if block.settings.badge_type == 'percentage' %}
+          -{{ savings_percent }}%
+        {% else %}
+          {{ block.settings.badge_text }}
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</prominent-price-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ProminentPrice{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.setupVariantListener();
+      }
+
+      setupVariantListener() {
+        const productForm = document.querySelector('product-form');
+        if (!productForm) return;
+
+        productForm.addEventListener('variant-change', (event) => {
+          this.updatePrice(event.detail.variant);
+        });
+      }
+
+      updatePrice(variant) {
+        if (!variant) return;
+
+        const priceElement = this.querySelector('.ai-prominent-price__price-{{ ai_gen_id }}');
+        const compareElement = this.querySelector('.ai-prominent-price__compare-{{ ai_gen_id }}');
+        const badgeElement = this.querySelector('.ai-prominent-price__badge-{{ ai_gen_id }}');
+
+        if (priceElement) {
+          const priceHTML = variant.compare_at_price > variant.price
+            ? `<span class="ai-prominent-price__compare-{{ ai_gen_id }}">${this.formatMoney(variant.compare_at_price)}</span> ${this.formatMoney(variant.price)}`
+            : this.formatMoney(variant.price);
+          priceElement.innerHTML = priceHTML;
+        }
+
+        if (badgeElement) {
+          if (variant.compare_at_price > variant.price) {
+            const savings = variant.compare_at_price - variant.price;
+            const savingsPercent = Math.round((savings * 100) / variant.compare_at_price);
+            const badgeType = '{{ block.settings.badge_type }}';
+            badgeElement.textContent = badgeType === 'percentage' ? `-${savingsPercent}%` : '{{ block.settings.badge_text }}';
+            badgeElement.style.display = 'inline-flex';
+          } else {
+            badgeElement.style.display = 'none';
+          }
+        }
+      }
+
+      formatMoney(cents) {
+        const money_format = {{ shop.money_format | json }};
+        const value = (cents / 100.0).toFixed(2);
+        return money_format.replace(/\{\{\s*amount\s*\}\}/, value);
+      }
+    }
+
+    customElements.define('prominent-price-{{ ai_gen_id }}', ProminentPrice{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Prominent price",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Price display"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_label",
+      "label": "Show price label",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "price_label",
+      "label": "Price label",
+      "default": "Price"
+    },
+    {
+      "type": "range",
+      "id": "label_size",
+      "label": "Label size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "price_size",
+      "label": "Price size",
+      "min": 24,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "select",
+      "id": "price_weight",
+      "label": "Price weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        },
+        {
+          "value": "900",
+          "label": "Extra bold"
+        }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "font_picker",
+      "id": "price_font",
+      "label": "Price font",
+      "default": "assistant_n4"
+    },
+    {
+      "type": "range",
+      "id": "compare_size",
+      "label": "Compare price size",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Alignment",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-end",
+          "label": "Right"
+        }
+      ],
+      "default": "flex-start"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Sale badge"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sale_badge",
+      "label": "Show sale badge",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "badge_type",
+      "label": "Badge type",
+      "options": [
+        {
+          "value": "percentage",
+          "label": "Percentage"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "percentage"
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge text",
+      "default": "Sale"
+    },
+    {
+      "type": "range",
+      "id": "badge_size",
+      "label": "Badge size",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "badge_radius",
+      "label": "Badge radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "price_color",
+      "label": "Price color",
+      "default": "#f89db5"
+    },
+    {
+      "type": "color",
+      "id": "label_color",
+      "label": "Label color",
+      "default": "#212326"
+    },
+    {
+      "type": "color",
+      "id": "compare_color",
+      "label": "Compare price color",
+      "default": "#212326"
+    },
+    {
+      "type": "color",
+      "id": "badge_bg_color",
+      "label": "Badge background",
+      "default": "#f89db5"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "label": "Padding",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Prominent price"
+    }
+  ]
+}
 {% endschema %}
