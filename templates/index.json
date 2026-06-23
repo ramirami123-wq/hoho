@@ -460,28 +460,52 @@
     },
     "1782227979b8599340": {
       "type": "_blocks",
-      "settings": {}
-    },
-    "1782228334f9e7a4b7": {
-      "type": "_blocks",
       "blocks": {
-        "ai_gen_block_8359c9e_eUGCFP": {
-          "type": "ai_gen_block_8359c9e",
+        "ai_gen_block_eb67863_LhrHYr": {
+          "type": "ai_gen_block_eb67863",
           "settings": {
             "price_size": 48,
             "price_weight": "700",
-            "price_color": "#f89db5",
-            "alignment": "flex-start",
-            "desktop_width_percent": 100,
-            "padding": 0,
-            "background_color": "#ffffff",
-            "border_radius": 0
+            "price_color": "#1a1b18",
+            "sale_price_color": "#f89db5",
+            "compare_price_size": 24,
+            "compare_price_color": "#212326",
+            "show_sale_badge": true,
+            "sale_badge_text": "Sale",
+            "badge_size": 12,
+            "badge_background_color": "#f89db5",
+            "badge_text_color": "#ffffff",
+            "badge_border_radius": 4,
+            "show_unit_price": true,
+            "unit_price_size": 14,
+            "unit_price_color": "#212326",
+            "spacing_bottom": 20,
+            "desktop_width_percent": 100
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "ai_gen_block_8359c9e_eUGCFP"
+        "ai_gen_block_eb67863_LhrHYr"
+      ],
+      "settings": {}
+    },
+    "1782229556585671e0": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_6d58945_gyTJAz": {
+          "type": "ai_gen_block_6d58945",
+          "settings": {
+            "price_size": 48,
+            "price_weight": "700",
+            "price_color": "#f89db5",
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_6d58945_gyTJAz"
       ],
       "settings": {}
     }
@@ -502,6 +526,6 @@
     "1782158185c471a07a",
     "1782225644e80008e2",
     "1782227979b8599340",
-    "1782228334f9e7a4b7"
+    "1782229556585671e0"
   ]
 }
