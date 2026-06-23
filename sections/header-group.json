@@ -88,10 +88,57 @@
         "padding_top": 12,
         "padding_bottom": 12
       }
+    },
+    "blocks_UxVChz": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c856904_46iTzD": {
+          "type": "ai_gen_block_c856904",
+          "settings": {
+            "header_col_1": "Feature",
+            "header_col_2": "Benefit",
+            "header_col_3": "Details",
+            "row_1_col_1": "Quality materials",
+            "row_1_col_2": "Long-lasting durability",
+            "row_1_col_3": "Premium construction",
+            "row_2_col_1": "Fast shipping",
+            "row_2_col_2": "Quick delivery",
+            "row_2_col_3": "2-3 business days",
+            "row_3_col_1": "Easy returns",
+            "row_3_col_2": "Hassle-free process",
+            "row_3_col_3": "30-day guarantee",
+            "row_4_col_1": "Customer support",
+            "row_4_col_2": "Expert assistance",
+            "row_4_col_3": "24/7 availability",
+            "header_background": "#199cd7",
+            "header_text_color": "#ffffff",
+            "row_odd_background": "#f3f3f3",
+            "row_even_background": "#ffffff",
+            "cell_text_color": "#212326",
+            "border_color": "#d2d5d9",
+            "table_background": "#ffffff",
+            "desktop_width_percent": 100,
+            "header_font_size": 16,
+            "cell_font_size": 14,
+            "cell_padding": 16,
+            "border_width": 1,
+            "border_radius": 0,
+            "text_alignment": "left"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c856904_46iTzD"
+      ],
+      "disabled": true,
+      "name": "Benefits table",
+      "settings": {}
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "blocks_UxVChz"
   ]
 }
