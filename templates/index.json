@@ -18,14 +18,14 @@
             "image": "shopify://shop_images/almas-banner_8ea0c1c9-629f-4549-8d5a-6b3637f1b4a3.png",
             "image_position": "center center",
             "text_box_position": "bottom-right",
-            "subheading": "شدّي، نحّتي، وأشرقي — نتائج مرئية من الأسبوع الأول",
+            "subheading": "Tighten, Sculpt & Glow — Visible Results from Week One",
             "subheading_size": "h4",
-            "heading": "✨ تقنية EMS + LED المتقدمة",
+            "heading": "✨ Advanced EMS + LED Technology",
             "heading_size": "h2",
             "heading_tag": "h2",
-            "text": "جهاز ALMAS الثوري يجمع بين تقنية EMS والضوء الأحمر LED لشد الوجه والرقبة بشكل طبيعي وآمن. الشحن مجاني في لبنان.",
+            "text": "The revolutionary ALMAS device combines EMS technology and red LED light to naturally and safely tighten the face and neck. Free shipping in Lebanon.",
             "text_size": "typeset2",
-            "button_label": "اكتشفي الآن",
+            "button_label": "Discover Now",
             "button_link": "shopify://products/neck-and-face-wrinkle-remover",
             "button_size": "large",
             "button_style_secondary": false
@@ -122,7 +122,7 @@
         "horizontal_scroll": false,
         "show_view_all": true,
         "show_divider": false,
-        "heading": "✨ منتجات ALMAS الأكثر مبيعاً",
+        "heading": "✨ ALMAS Best-Selling Products",
         "heading_size": "h1",
         "heading_alignment": "center",
         "heading_tag": "h2",
@@ -160,7 +160,7 @@
         "ai_gen_block_79c28ba_CXJeG8": {
           "type": "ai_gen_block_79c28ba",
           "settings": {
-            "title": "نتائج حقيقية - قبل وبعد",
+            "title": "Real Results - Before & After",
             "title_alignment": "center",
             "image_1": "https://cdn.shopify.com/s/files/1/0746/5133/6893/files/1000846442.jpg",
             "image_1_alt": "Before and after result 1",
@@ -200,7 +200,7 @@
             "icon": "none",
             "icon_size": "medium",
             "custom_icon": "",
-            "text": "منتجات ذكية. حياة أجمل كل يوم.",
+            "text": "Smart Products. A Better Life Every Day.",
             "text_size": 20,
             "link": ""
           }
@@ -229,7 +229,7 @@
         "heading_NEyD4Q": {
           "type": "heading",
           "settings": {
-            "heading": "🚚 توصيل سريع إلى لبنان | ✅ ضمان الجودة | 💳 دفع آمن",
+            "heading": "🚚 Fast Delivery to Lebanon | ✅ Quality Guarantee | 💳 Secure Payment",
             "heading_size": "h1",
             "heading_tag": "h2"
           }
@@ -237,7 +237,7 @@
         "text_z3jQfd": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>جهاز ALMAS الذكي</strong> هو الحل الأمثل للعناية بالبشرة من المنزل. يجمع بين تقنية <strong>EMS المتقدمة</strong> و<strong>LED العلاجية</strong> لشد الوجه والرقبة بفعالية مثبتة سريرياً.</p><p>✨ <strong>نتائج مرئية في أسابيع قليلة</strong> — تحسين مرونة البشرة، تقليل الخطوط الدقيقة، وإشراقة طبيعية.</p><p>🏆 <strong>موثوق من عملاء يثقون بـ ALMAS في لبنان</strong> — ضمان جودة كامل وخدمة عملاء متميزة.</p><p><strong>استثمري في جمالك اليوم!</strong> 💖</p>",
+            "text": "<p><strong>ALMAS Smart Device</strong> is the perfect solution for skincare from home. It combines <strong>advanced EMS technology</strong> and <strong>therapeutic LED</strong> to tighten the face and neck with clinically proven effectiveness.</p><p>✨ <strong>Visible results in just a few weeks</strong> — improved skin elasticity, reduced fine lines, and natural radiance.</p><p>🏆 <strong>Trusted by customers who believe in ALMAS in Lebanon</strong> — complete quality guarantee and exceptional customer service.</p><p><strong>Invest in your beauty today!</strong> 💖</p>",
             "text_size": "typeset2",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -276,7 +276,7 @@
             "icon": "none",
             "icon_size": "medium",
             "custom_icon": "",
-            "text": "توصيل مجاني لجميع مناطق لبنان.",
+            "text": "Free Delivery to All Areas of Lebanon.",
             "text_size": 20,
             "link": ""
           }
@@ -312,9 +312,9 @@
             "icon": "return",
             "icon_size": "medium",
             "custom_icon": "",
-            "title": "ضمان الرضا 30 يوم",
+            "title": "30-Day Satisfaction Guarantee",
             "title_size": "h3",
-            "text": "<p>غير راضية؟ استرجعي منتجك خلال 30 يوم للحصول على استرجاع كامل بدون أسئلة.</p>"
+            "text": "<p>Not satisfied? Return your product within 30 days for a full refund, no questions asked.</p>"
           }
         },
         "guarantee_ej4aWF": {
@@ -323,9 +323,9 @@
             "icon": "truck",
             "icon_size": "medium",
             "custom_icon": "",
-            "title": "توصيل سريع لكل لبنان",
+            "title": "Fast Delivery Across Lebanon",
             "title_size": "h3",
-            "text": "<p>توصيل مجاني وسريع إلى جميع أنحاء لبنان. نضمن وصول منتجاتك بأمان وفي أسرع وقت.</p>"
+            "text": "<p>Free and fast delivery to all areas of Lebanon. We guarantee your products arrive safely and quickly.</p>"
           }
         },
         "guarantee_g6xKng": {
@@ -334,9 +334,9 @@
             "icon": "chat_bubble",
             "icon_size": "medium",
             "custom_icon": "",
-            "title": "دعم عملاء متميز",
+            "title": "Exceptional Customer Support",
             "title_size": "h3",
-            "text": "<p>فريق دعم متخصص متاح 24/7 للإجابة على جميع أسئلتك والمساعدة في اختيار المنتج المناسب.</p>"
+            "text": "<p>Specialized support team available 24/7 to answer all your questions and help you choose the right product.</p>"
           }
         },
         "guarantee_cpTzgP": {
@@ -345,9 +345,9 @@
             "icon": "shield",
             "icon_size": "medium",
             "custom_icon": "",
-            "title": "منتجات أصلية 100%",
+            "title": "100% Authentic Products",
             "title_size": "h3",
-            "text": "<p>جميع منتجاتنا أصلية وموثوقة. نضمن جودة عالية وفعالية مثبتة سريرياً.</p>"
+            "text": "<p>All our products are authentic and reliable. We guarantee high quality and clinically proven effectiveness.</p>"
           }
         }
       },
@@ -365,7 +365,7 @@
         "full_width": false,
         "show_divider": false,
         "columns_desktop": 4,
-        "heading": "لماذا تختارين ALMAS؟",
+        "heading": "Why Choose ALMAS?",
         "heading_size": "h1",
         "heading_tag": "h2",
         "columns_mobile": "2",
@@ -385,43 +385,43 @@
         "question_Dkx9LX": {
           "type": "question",
           "settings": {
-            "title": "كيف يتم شحن الجهاز؟",
-            "text": "<p>يتم الشحن عبر كابل USB، ويحتاج من 1 إلى 2 ساعة للشحن الكامل، ويكفي لعدة جلسات.</p>"
+            "title": "How do I charge the device?",
+            "text": "<p>The device charges via USB cable and takes 1-2 hours for a full charge, providing power for multiple sessions.</p>"
           }
         },
         "question_ny9Hb4": {
           "type": "question",
           "settings": {
-            "title": "هل يناسب جميع أنواع البشرة؟",
-            "text": "<p>نعم، يناسب جميع أنواع البشرة. ننصح أصحاب البشرة الحساسة أو من لديهم حالات طبية باستشارة طبيب الجلدية قبل الاستخدام.</p>"
+            "title": "Is it suitable for all skin types?",
+            "text": "<p>Yes, it's suitable for all skin types. We recommend those with sensitive skin or medical conditions consult a dermatologist before use.</p>"
           }
         },
         "question_yNkDQY": {
           "type": "question",
           "settings": {
-            "title": "كيف أستخدم جهاز ALMAS؟",
-            "text": "<p>نظّفي وجهك ورقبتك، ضعي سيروم أو كريم، ثم شغّلي الجهاز واستخدميه لمدة 5 إلى 10 دقائق يومياً.</p>"
+            "title": "How do I use the ALMAS device?",
+            "text": "<p>Cleanse your face and neck, apply serum or cream, then turn on the device and use it for 5-10 minutes daily.</p>"
           }
         },
         "question_YmRBPG": {
           "type": "question",
           "settings": {
-            "title": "هل يمكن استخدام سيروم أو كريم مع الجهاز؟",
-            "text": "<p>نعم، الاهتزاز والتيار الكهربائي الدقيق يعززان امتصاص المنتجات بشكل أفضل.</p>"
+            "title": "Can I use serum or cream with the device?",
+            "text": "<p>Yes, the vibration and microcurrent technology enhance product absorption for better results.</p>"
           }
         },
         "question_9WMfD8": {
           "type": "question",
           "settings": {
-            "title": "هل الجهاز آمن للاستخدام اليومي؟",
-            "text": "<p>نعم، يحتوي على 3 مستويات للشدة. ننصح بالبدء بالمستوى المنخفض.</p>"
+            "title": "Is the device safe for daily use?",
+            "text": "<p>Yes, it has 3 intensity levels. We recommend starting with the lowest level.</p>"
           }
         },
         "question_BUnLCa": {
           "type": "question",
           "settings": {
-            "title": "متى تظهر النتائج؟",
-            "text": "<p>ستلاحظين فرقاً في إشراقة البشرة من الأسبوع الأول، والنتائج الكاملة تظهر خلال 4 إلى 6 أسابيع.</p>"
+            "title": "When will I see results?",
+            "text": "<p>You'll notice improved skin radiance from the first week, with full results appearing within 4-6 weeks.</p>"
           }
         }
       },
@@ -438,7 +438,7 @@
         "narrow": false,
         "secondary_background": true,
         "show_divider": true,
-        "heading": "الأسئلة الشائعة",
+        "heading": "Frequently Asked Questions",
         "heading_size": "h1",
         "heading_alignment": "center",
         "heading_tag": "h2",
