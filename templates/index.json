@@ -508,6 +508,28 @@
         "ai_gen_block_6d58945_gyTJAz"
       ],
       "settings": {}
+    },
+    "1782233208f86d29b2": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_64b012e_jGER6q": {
+          "type": "ai_gen_block_64b012e",
+          "settings": {
+            "price_size": 32,
+            "price_weight": "700",
+            "price_color": "#f89db5",
+            "text_alignment": "left",
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "display_order": -1
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_64b012e_jGER6q"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -526,6 +548,7 @@
     "1782158185c471a07a",
     "1782225644e80008e2",
     "1782227979b8599340",
-    "1782229556585671e0"
+    "1782229556585671e0",
+    "1782233208f86d29b2"
   ]
 }
