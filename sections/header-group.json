@@ -17,7 +17,7 @@
         "announcement_DxHjz8": {
           "type": "announcement",
           "settings": {
-            "text": "✨ توصيل مجاني لكل لبنان | دفع عند الاستلام",
+            "text": "✨ Free Delivery All Over Lebanon | Cash on Delivery",
             "text_on_mobile": "",
             "text_size": 13,
             "link": ""
@@ -26,8 +26,8 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "✨ توصيل مجاني لكل لبنان | دعم 24/7 | منتجات أصلية 100%",
-            "text_on_mobile": "✨ توصيل مجاني | دعم 24/7",
+            "text": "✨ Free Delivery All Over Lebanon | 24/7 Support | 100% Authentic Products",
+            "text_on_mobile": "✨ Free Delivery | 24/7 Support",
             "text_size": 13,
             "link": ""
           }

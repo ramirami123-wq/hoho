@@ -230,7 +230,7 @@
         "apply_overlay": false,
         "full_width": false,
         "show_divider": false,
-        "heading": "نتائج حقيقية ✨ قبل وبعد",
+        "heading": "Real Results ✨ Before & After",
         "heading_size": "h1",
         "heading_alignment": "center",
         "heading_tag": "h2",
@@ -268,7 +268,7 @@
             "icon": "none",
             "icon_size": "medium",
             "custom_icon": "",
-            "text": "🚚 اشترِ 2 واحصل على شحن مجاني | 🎁 اشترِ 3 واحصل على خصم 15% | ✨ جهاز ALMAS — جمالك من المنزل",
+            "text": "🚚 Buy 2 Get Free Shipping | 🎁 Buy 3 Get 15% Off | ✨ ALMAS Device — Your Beauty from Home",
             "text_size": 20,
             "link": ""
           }
@@ -322,7 +322,7 @@
         "heading_r7Wwa6": {
           "type": "heading",
           "settings": {
-            "heading": "أظهري توهجك الطبيعي",
+            "heading": "Show Your Natural Glow",
             "heading_size": "h1",
             "heading_tag": "h2"
           }
@@ -330,7 +330,7 @@
         "text_txn6Gr": {
           "type": "text",
           "settings": {
-            "text": "<p>امنحي بشرتك العناية التي تستحقها. تقنية التجميل المتقدمة تساعد بشرتك على أن تبدو أكثر نعومة وإشراقاً وانتعاشاً مع كل استخدام.</p>",
+            "text": "<p>Give your skin the care it deserves. Advanced beauty technology helps your skin look smoother, brighter, and more refreshed with every use.</p>",
             "text_size": "typeset2",
             "secondary_color": false
           }
@@ -376,7 +376,7 @@
             "icon": "none",
             "icon_size": "medium",
             "custom_icon": "",
-            "text": "الإشراق هو الثقة التي تراها العيون",
+            "text": "Radiance is the confidence your eyes see",
             "text_size": 20,
             "link": ""
           }
@@ -405,7 +405,7 @@
         "heading_NVjMGc": {
           "type": "heading",
           "settings": {
-            "heading": "شدّي، قوّي وانتعشي",
+            "heading": "Tighten, Strengthen & Refresh",
             "heading_size": "h1",
             "heading_tag": "h2"
           }
@@ -413,7 +413,7 @@
         "text_xqVGMr": {
           "type": "text",
           "settings": {
-            "text": "<p>استمتعي بتجربة عناية بالبشرة مريحة مصممة لدعم مظهر أكثر شباباً وإشراقاً من راحة منزلك.</p>",
+            "text": "<p>Enjoy a comfortable skincare experience designed to support a more youthful and radiant appearance from the comfort of your home.</p>",
             "text_size": "typeset2",
             "secondary_color": false
           }
@@ -454,7 +454,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<div style=\"padding:20px; font-family:Arial, sans-serif; direction:rtl;\">\n<h2 style=\"text-align:center; color:#c0006a; margin-bottom:20px;\">✨ لماذا جهاز ALMAS؟</h2>\n<table style=\"width:100%; border-collapse:collapse; text-align:center;\">\n    <thead>\n        <tr style=\"background-color:#c0006a; color:white;\">\n            <th style=\"padding:12px; text-align:right;\">الميزة</th>\n            <th style=\"padding:12px;\">جهاز ALMAS ✨</th>\n            <th style=\"padding:12px;\">الطرق التقليدية</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td style=\"padding:12px; text-align:right;\">تقنية الميكروكيرنت</td>\n            <td>✔ نعم</td>\n            <td>✖ لا</td>\n        </tr>\n        <tr style=\"background-color:#FFF5F8;\">\n            <td style=\"padding:12px; text-align:right;\">وظيفة التسخين اللطيف</td>\n            <td>✔ نعم</td>\n            <td>✖ لا</td>\n        </tr>\n        <tr>\n            <td style=\"padding:12px; text-align:right;\">تدليك بالاهتزاز الصوتي</td>\n            <td>✔ نعم</td>\n            <td>✖ لا</td>\n        </tr>\n        <tr style=\"background-color:#FFF5F8;\">\n            <td style=\"padding:12px; text-align:right;\">مناسب للوجه والرقبة</td>\n            <td>✔ نعم</td>\n            <td>✖ لا</td>\n        </tr>\n        <tr>\n            <td style=\"padding:12px; text-align:right;\">تصميم سبا منزلي محمول</td>\n            <td>✔ نعم</td>\n            <td>✖ لا</td>\n        </tr>\n    </tbody>\n</table>\n</div>",
+        "custom_liquid": "<div style=\"padding:20px; font-family:Arial, sans-serif; direction:ltr; background-color:#f89db5;\">\n<h2 style=\"text-align:center; color:#f89db5; margin-bottom:20px;\">✨ Why ALMAS Device?</h2>\n<table style=\"width:100%; border-collapse:collapse; text-align:center;\">\n    <thead>\n        <tr style=\"background-color:#f89db5; color:white;\">\n            <th style=\"padding:12px; text-align:left;\">Feature</th>\n            <th style=\"padding:12px;\">ALMAS Device ✨</th>\n            <th style=\"padding:12px;\">Traditional Methods</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td style=\"padding:12px; text-align:left;\">Microcurrent Technology</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n        <tr style=\"background-color:#FFF5F8;\">\n            <td style=\"padding:12px; text-align:left;\">Gentle Heating Function</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n        <tr>\n            <td style=\"padding:12px; text-align:left;\">Sonic Vibration Massage</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n        <tr style=\"background-color:#FFF5F8;\">\n            <td style=\"padding:12px; text-align:left;\">Suitable for Face & Neck</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n        <tr>\n            <td style=\"padding:12px; text-align:left;\">Portable Home Spa Design</td>\n            <td>✔ Yes</td>\n            <td>✖ No</td>\n        </tr>\n    </tbody>\n</table>\n</div>",
         "full_width": false,
         "show_divider": false,
         "padding_top": 36,
@@ -467,43 +467,43 @@
         "question_M7TqYW": {
           "type": "question",
           "settings": {
-            "title": "كيف أشحن الجهاز؟",
-            "text": "<p>يُشحن الجهاز عبر كابل USB المرفق. وقت الشحن الكامل حوالي 1-2 ساعة، ويعمل لعدة جلسات على شحنة واحدة.</p>"
+            "title": "How do I charge the device?",
+            "text": "<p>The device charges via the included USB cable. Full charging time is approximately 1-2 hours, and it works for several sessions on a single charge.</p>"
           }
         },
         "question_yqHqK6": {
           "type": "question",
           "settings": {
-            "title": "كيف أستخدم جهاز ALMAS؟",
-            "text": "<p>نظّفي وجهك ورقبتك جيداً، ثم ضعي السيروم أو الكريم المرطب. شغّلي الجهاز واختاري مستوى الشدة المناسب، ودلّكي بحركات تصاعدية لطيفة لمدة 5-10 دقائق يومياً للحصول على أفضل النتائج.</p>"
+            "title": "How do I use the ALMAS device?",
+            "text": "<p>Cleanse your face and neck thoroughly, then apply serum or moisturizing cream. Turn on the device and select the appropriate intensity level, then massage gently in upward motions for 5-10 minutes daily for best results.</p>"
           }
         },
         "question_7XFnnm": {
           "type": "question",
           "settings": {
-            "title": "هل يمكن استخدام السيروم أو الكريم مع الجهاز؟",
-            "text": "<p>نعم، بل يُنصح بذلك! الجهاز يعزز امتصاص السيروم والكريمات بشكل أعمق وأسرع بفضل تقنية الاهتزاز والميكروكيرنت. استخدمي سيروم الهيالورونيك أو أي كريم مرطب تفضلينه.</p>"
+            "title": "Can I use serum or cream with the device?",
+            "text": "<p>Yes, it's highly recommended! The device enhances the absorption of serums and creams more deeply and quickly thanks to its vibration and microcurrent technology. Use hyaluronic acid serum or any moisturizing cream you prefer.</p>"
           }
         },
         "question_QTiLt3": {
           "type": "question",
           "settings": {
-            "title": "هل الجهاز آمن للاستخدام اليومي؟",
-            "text": "<p>نعم، الجهاز مصمم للاستخدام اليومي بأمان. يحتوي على 3 مستويات شدة — ابدئي بالمستوى الأول إذا كانت هذه تجربتك الأولى مع أجهزة التجميل.</p>"
+            "title": "Is the device safe for daily use?",
+            "text": "<p>Yes, the device is designed for safe daily use. It has 3 intensity levels — start with the first level if this is your first experience with beauty devices.</p>"
           }
         },
         "question_HCUMMj": {
           "type": "question",
           "settings": {
-            "title": "متى تظهر النتائج؟",
-            "text": "<p>تلاحظين فرقاً في نضارة البشرة من الأسبوع الأول، أما النتائج الكاملة في الشد والنحت فتظهر عادةً بعد 4-6 أسابيع من الاستخدام المنتظم.</p>"
+            "title": "When will I see results?",
+            "text": "<p>You'll notice a difference in skin radiance from the first week, while full results in tightening and sculpting typically appear after 4-6 weeks of regular use.</p>"
           }
         },
         "question_P7AbQB": {
           "type": "question",
           "settings": {
-            "title": "هل يناسب جميع أنواع البشرة؟",
-            "text": "<p>نعم، الجهاز مناسب لجميع أنواع البشرة. لكن إذا كانت لديك بشرة حساسة جداً أو حالات جلدية معينة، يُنصح باستشارة طبيب الجلدية قبل الاستخدام.</p>"
+            "title": "Is it suitable for all skin types?",
+            "text": "<p>Yes, the device is suitable for all skin types. However, if you have very sensitive skin or certain skin conditions, it's recommended to consult a dermatologist before use.</p>"
           }
         }
       },
@@ -520,7 +520,7 @@
         "narrow": false,
         "secondary_background": false,
         "show_divider": false,
-        "heading": "الأسئلة الشائعة",
+        "heading": "Frequently Asked Questions",
         "heading_size": "h1",
         "heading_alignment": "center",
         "heading_tag": "h2",
