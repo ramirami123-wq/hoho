@@ -58,43 +58,6 @@
         "padding_bottom": 36
       }
     },
-    "blocks_wJ9ATi": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_79c28ba_CXJeG8": {
-          "type": "ai_gen_block_79c28ba",
-          "settings": {
-            "title": "نتائج حقيقية - قبل وبعد",
-            "title_alignment": "center",
-            "image_1": "https://cdn.shopify.com/s/files/1/0746/5133/6893/files/1000846442.jpg",
-            "image_1_alt": "Before and after result 1",
-            "image_2": "https://cdn.shopify.com/s/files/1/0746/5133/6893/files/1000846444.jpg",
-            "image_2_alt": "Before and after result 2",
-            "image_3": "https://cdn.shopify.com/s/files/1/0746/5133/6893/files/1000846441.png",
-            "image_3_alt": "Before and after result 3",
-            "image_4": "https://cdn.shopify.com/s/files/1/0746/5133/6893/files/1000846443_1.png",
-            "image_4_alt": "Before and after result 4",
-            "desktop_columns": 4,
-            "grid_gap": 12,
-            "max_width": 1200,
-            "background_color": "#ffffff",
-            "title_color": "#1a1b18",
-            "title_size": 24,
-            "title_spacing": 24,
-            "image_background": "#f3f3f3",
-            "image_border_radius": 8,
-            "section_padding_top": 40,
-            "section_padding_bottom": 40
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_79c28ba_CXJeG8"
-      ],
-      "name": "Before & After results",
-      "settings": {}
-    },
     "guarantees_wg4VNt": {
       "type": "guarantees",
       "blocks": {
@@ -190,6 +153,43 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "blocks_wJ9ATi": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_79c28ba_CXJeG8": {
+          "type": "ai_gen_block_79c28ba",
+          "settings": {
+            "title": "نتائج حقيقية - قبل وبعد",
+            "title_alignment": "center",
+            "image_1": "https://cdn.shopify.com/s/files/1/0746/5133/6893/files/1000846442.jpg",
+            "image_1_alt": "Before and after result 1",
+            "image_2": "https://cdn.shopify.com/s/files/1/0746/5133/6893/files/1000846444.jpg",
+            "image_2_alt": "Before and after result 2",
+            "image_3": "https://cdn.shopify.com/s/files/1/0746/5133/6893/files/1000846441.png",
+            "image_3_alt": "Before and after result 3",
+            "image_4": "https://cdn.shopify.com/s/files/1/0746/5133/6893/files/1000846443_1.png",
+            "image_4_alt": "Before and after result 4",
+            "desktop_columns": 4,
+            "grid_gap": 12,
+            "max_width": 1200,
+            "background_color": "#ffffff",
+            "title_color": "#1a1b18",
+            "title_size": 24,
+            "title_spacing": 24,
+            "image_background": "#f3f3f3",
+            "image_border_radius": 8,
+            "section_padding_top": 40,
+            "section_padding_bottom": 40
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_79c28ba_CXJeG8"
+      ],
+      "name": "Before & After results",
+      "settings": {}
     },
     "scrolling_promotion_gqQrxK": {
       "type": "scrolling-promotion",
@@ -448,78 +448,50 @@
     },
     "17821579167c50a88b": {
       "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_f7525d5_PTAqMb": {
-          "type": "ai_gen_block_f7525d5",
-          "settings": {
-            "price_size": 48,
-            "price_weight": "700",
-            "price_color": "#f89db5",
-            "compare_size": 20,
-            "compare_color": "#212326",
-            "show_save_badge": true,
-            "badge_type": "percentage",
-            "badge_text": "Save",
-            "badge_size": 12,
-            "badge_bg_color": "#f89db5",
-            "badge_text_color": "#ffffff",
-            "badge_radius": 4,
-            "show_unit_price": true,
-            "unit_size": 14,
-            "unit_color": "#212326"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_f7525d5_PTAqMb"
-      ],
       "settings": {}
     },
     "1782158185c471a07a": {
       "type": "_blocks",
+      "settings": {}
+    },
+    "1782225644e80008e2": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "1782227979b8599340": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "1782228334f9e7a4b7": {
+      "type": "_blocks",
       "blocks": {
-        "ai_gen_block_450dd8c_EddEYy": {
-          "type": "ai_gen_block_450dd8c",
+        "ai_gen_block_8359c9e_eUGCFP": {
+          "type": "ai_gen_block_8359c9e",
           "settings": {
-            "show_label": true,
-            "price_label": "Price",
-            "label_size": 12,
             "price_size": 48,
             "price_weight": "700",
-            "price_font": "assistant_n4",
-            "compare_size": 20,
+            "price_color": "#f89db5",
             "alignment": "flex-start",
             "desktop_width_percent": 100,
-            "show_sale_badge": true,
-            "badge_type": "percentage",
-            "badge_text": "Sale",
-            "badge_size": 12,
-            "badge_radius": 4,
-            "price_color": "#f89db5",
-            "label_color": "#212326",
-            "compare_color": "#212326",
-            "badge_bg_color": "#f89db5",
-            "badge_text_color": "#ffffff",
-            "background_color": "#ffffff",
             "padding": 0,
+            "background_color": "#ffffff",
             "border_radius": 0
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "ai_gen_block_450dd8c_EddEYy"
+        "ai_gen_block_8359c9e_eUGCFP"
       ],
       "settings": {}
     }
   },
   "order": [
     "slideshow",
-    "blocks_wJ9ATi",
     "guarantees_wg4VNt",
     "featured_collection_RtgRw4",
     "custom_liquid_6eyMWd",
+    "blocks_wJ9ATi",
     "scrolling_promotion_gqQrxK",
     "rich_text_iPTEGL",
     "scrolling_promotion_yJEgih",
@@ -527,6 +499,9 @@
     "guarantees_QbnCCW",
     "faq_VkHiGm",
     "17821579167c50a88b",
-    "1782158185c471a07a"
+    "1782158185c471a07a",
+    "1782225644e80008e2",
+    "1782227979b8599340",
+    "1782228334f9e7a4b7"
   ]
 }
