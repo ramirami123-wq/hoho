@@ -1,6 +1,421 @@
+{% doc %}
+  @prompt
+    Create a prominent price display block for the product page that shows the product price in a large, bold font with a strong accent color. It should be placed above the buy button.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-price-display-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    margin-bottom: {{ block.settings.spacing_bottom }}px;
+  }
+
+  .ai-price-display__container-{{ ai_gen_id }} {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .ai-price-display__price-{{ ai_gen_id }} {
+    font-size: {{ block.settings.price_size }}px;
+    font-weight: {{ block.settings.price_weight }};
+    color: {{ block.settings.price_color }};
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .ai-price-display__price--on-sale-{{ ai_gen_id }} {
+    color: {{ block.settings.sale_price_color }};
+  }
+
+  .ai-price-display__compare-price-{{ ai_gen_id }} {
+    font-size: {{ block.settings.compare_price_size }}px;
+    font-weight: 400;
+    color: {{ block.settings.compare_price_color }};
+    text-decoration: line-through;
+    opacity: 0.7;
+  }
+
+  .ai-price-display__badge-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: {{ block.settings.badge_background_color }};
+    color: {{ block.settings.badge_text_color }};
+    font-size: {{ block.settings.badge_size }}px;
+    font-weight: 600;
+    border-radius: {{ block.settings.badge_border_radius }}px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .ai-price-display__unit-price-{{ ai_gen_id }} {
+    font-size: {{ block.settings.unit_price_size }}px;
+    color: {{ block.settings.unit_price_color }};
+    margin-top: 8px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-price-display__price-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.price_size }}px * 0.85);
+    }
+
+    .ai-price-display__compare-price-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.compare_price_size }}px * 0.85);
+    }
+  }
+{% endstyle %}
+
+<price-display-{{ ai_gen_id }}
+  class="ai-price-display-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  {% if product %}
+    <div class="ai-price-display__container-{{ ai_gen_id }}">
+      {% if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price %}
+        <div
+          class="ai-price-display__price-{{ ai_gen_id }} ai-price-display__price--on-sale-{{ ai_gen_id }}"
+        >
+          {{ product.selected_or_first_available_variant.price | money }}
+        </div>
+        <div class="ai-price-display__compare-price-{{ ai_gen_id }}">
+          {{ product.selected_or_first_available_variant.compare_at_price | money }}
+        </div>
+        {% if block.settings.show_sale_badge %}
+          <div class="ai-price-display__badge-{{ ai_gen_id }}">
+            {{ block.settings.sale_badge_text }}
+          </div>
+        {% endif %}
+      {% else %}
+        <div class="ai-price-display__price-{{ ai_gen_id }}">
+          {{ product.selected_or_first_available_variant.price | money }}
+        </div>
+      {% endif %}
+    </div>
+
+    {% if block.settings.show_unit_price and product.selected_or_first_available_variant.unit_price_measurement %}
+      <div class="ai-price-display__unit-price-{{ ai_gen_id }}">
+        {{ product.selected_or_first_available_variant.unit_price | money }}
+        /
+        {% if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 %}
+          {{ product.selected_or_first_available_variant.unit_price_measurement.reference_value }}
+        {% endif %}
+        {{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }}
+      </div>
+    {% endif %}
+  {% endif %}
+</price-display-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class PriceDisplay{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.setupVariantListener();
+      }
+
+      setupVariantListener() {
+        const productForm = document.querySelector('product-form');
+        if (!productForm) return;
+
+        productForm.addEventListener('variant-change', (event) => {
+          this.updatePrice(event.detail.variant);
+        });
+      }
+
+      updatePrice(variant) {
+        if (!variant) return;
+
+        const priceContainer = this.querySelector('.ai-price-display__container-{{ ai_gen_id }}');
+        const unitPriceElement = this.querySelector('.ai-price-display__unit-price-{{ ai_gen_id }}');
+
+        const isOnSale = variant.compare_at_price && variant.compare_at_price > variant.price;
+
+        let priceHTML = '';
+
+        if (isOnSale) {
+          priceHTML = `
+            <div class="ai-price-display__price-{{ ai_gen_id }} ai-price-display__price--on-sale-{{ ai_gen_id }}">
+              ${this.formatMoney(variant.price)}
+            </div>
+            <div class="ai-price-display__compare-price-{{ ai_gen_id }}">
+              ${this.formatMoney(variant.compare_at_price)}
+            </div>
+          `;
+
+          {% if block.settings.show_sale_badge %}
+            priceHTML += `
+              <div class="ai-price-display__badge-{{ ai_gen_id }}">
+                {{ block.settings.sale_badge_text }}
+              </div>
+            `;
+          {% endif %}
+        } else {
+          priceHTML = `
+            <div class="ai-price-display__price-{{ ai_gen_id }}">
+              ${this.formatMoney(variant.price)}
+            </div>
+          `;
+        }
+
+        priceContainer.innerHTML = priceHTML;
+
+        {% if block.settings.show_unit_price %}
+          if (variant.unit_price_measurement && unitPriceElement) {
+            const referenceValue = variant.unit_price_measurement.reference_value !== 1
+              ? variant.unit_price_measurement.reference_value
+              : '';
+            unitPriceElement.innerHTML = `
+              ${this.formatMoney(variant.unit_price)}
+              /
+              ${referenceValue}
+              ${variant.unit_price_measurement.reference_unit}
+            `;
+            unitPriceElement.style.display = 'block';
+          } else if (unitPriceElement) {
+            unitPriceElement.style.display = 'none';
+          }
+        {% endif %}
+      }
+
+      formatMoney(cents) {
+        const money_format = {{ shop.money_format | json }};
+        if (typeof cents === 'string') {
+          cents = cents.replace('.', '');
+        }
+        let value = '';
+        const placeholderRegex = /\{\{\s*(\w+)\s*\}\}/;
+        const formatString = money_format;
+
+        function formatWithDelimiters(number, precision, thousands, decimal) {
+          thousands = thousands || ',';
+          decimal = decimal || '.';
+
+          if (isNaN(number) || number === null) {
+            return 0;
+          }
+
+          number = (number / 100.0).toFixed(precision);
+
+          const parts = number.split('.');
+          const dollarsAmount = parts[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1' + thousands);
+          const centsAmount = parts[1] ? decimal + parts[1] : '';
+
+          return dollarsAmount + centsAmount;
+        }
+
+        switch (formatString.match(placeholderRegex)[1]) {
+          case 'amount':
+            value = formatWithDelimiters(cents, 2);
+            break;
+          case 'amount_no_decimals':
+            value = formatWithDelimiters(cents, 0);
+            break;
+          case 'amount_with_comma_separator':
+            value = formatWithDelimiters(cents, 2, '.', ',');
+            break;
+          case 'amount_no_decimals_with_comma_separator':
+            value = formatWithDelimiters(cents, 0, '.', ',');
+            break;
+          case 'amount_no_decimals_with_space_separator':
+            value = formatWithDelimiters(cents, 0, ' ');
+            break;
+          case 'amount_with_apostrophe_separator':
+            value = formatWithDelimiters(cents, 2, "'");
+            break;
+        }
+
+        return formatString.replace(placeholderRegex, value);
+      }
+    }
+
+    customElements.define('price-display-{{ ai_gen_id }}', PriceDisplay{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Prominent price display",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Price style"
+    },
+    {
+      "type": "range",
+      "id": "price_size",
+      "label": "Price size",
+      "min": 24,
+      "max": 72,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "select",
+      "id": "price_weight",
+      "label": "Price weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        },
+        {
+          "value": "800",
+          "label": "Extra bold"
+        }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "color",
+      "id": "price_color",
+      "label": "Price color",
+      "default": "#1a1b18"
+    },
+    {
+      "type": "color",
+      "id": "sale_price_color",
+      "label": "Sale price color",
+      "default": "#f89db5"
+    },
+    {
+      "type": "header",
+      "content": "Compare at price"
+    },
+    {
+      "type": "range",
+      "id": "compare_price_size",
+      "label": "Compare price size",
+      "min": 14,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "color",
+      "id": "compare_price_color",
+      "label": "Compare price color",
+      "default": "#212326"
+    },
+    {
+      "type": "header",
+      "content": "Sale badge"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sale_badge",
+      "label": "Show sale badge",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "sale_badge_text",
+      "label": "Badge text",
+      "default": "Sale"
+    },
+    {
+      "type": "range",
+      "id": "badge_size",
+      "label": "Badge text size",
+      "min": 10,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "badge_background_color",
+      "label": "Badge background",
+      "default": "#f89db5"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "badge_border_radius",
+      "label": "Badge border radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Unit price"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_unit_price",
+      "label": "Show unit price",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "unit_price_size",
+      "label": "Unit price size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "unit_price_color",
+      "label": "Unit price color",
+      "default": "#212326"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "spacing_bottom",
+      "label": "Spacing below",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Prominent price display"
+    }
+  ]
+}
 {% endschema %}
