@@ -88,7 +88,7 @@
         "custom_liquid_WeE6BM": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<style>\n.custom-price-display {\n  font-size: 28px;\n  font-weight: 700;\n  color: #CB572A;\n  margin: 10px 0;\n}\n</style>\n<div class=\"custom-price-display\">\n  {{ product.selected_or_first_available_variant.price | money }}\n</div>"
+            "custom_liquid": "<style>\n.custom-price-display {\n  font-size: 28px;\n  font-weight: 700;\n  color: #f89db5;\n  margin: 10px 0;\n}\n</style>\n<div class=\"custom-price-display\">\n  {{ product.selected_or_first_available_variant.price | money }}\n</div>"
           }
         },
         "buy_buttons": {
