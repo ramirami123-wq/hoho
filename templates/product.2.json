@@ -31,6 +31,12 @@
           "type": "rating",
           "settings": {}
         },
+        "custom_liquid_WeE6BM": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>\n.custom-price-display {\n  font-size: 28px;\n  font-weight: 700;\n  color: #f89db5;\n  margin: 10px 0;\n}\n</style>\n<div class=\"custom-price-display\">\n  {{ product.selected_or_first_available_variant.price | money }}\n</div>"
+          }
+        },
         "price": {
           "type": "price",
           "disabled": true,
@@ -57,12 +63,6 @@
             "enable_swatch_cross": true,
             "enable_swatch_unavailable_click": false,
             "size_chart": ""
-          }
-        },
-        "custom_liquid_WeE6BM": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<style>\n.custom-price-display {\n  font-size: 28px;\n  font-weight: 700;\n  color: #f89db5;\n  margin: 10px 0;\n}\n</style>\n<div class=\"custom-price-display\">\n  {{ product.selected_or_first_available_variant.price | money }}\n</div>"
           }
         },
         "buy_buttons": {
@@ -101,10 +101,10 @@
         "custom_liquid_bjTneR",
         "title",
         "rating",
+        "custom_liquid_WeE6BM",
         "price",
         "custom_liquid_H9DXEK",
         "variant_picker",
-        "custom_liquid_WeE6BM",
         "buy_buttons",
         "custom_liquid_99GhEq",
         "related_buttons",
