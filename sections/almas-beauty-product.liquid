@@ -1,0 +1,353 @@
+{% comment %}
+  ALMAS BEAUTY — Clean Product Landing Page
+  Designed around the purple/white aesthetic shown in the reference video.
+  Dynamic Shopify product data; no external libraries required.
+{% endcomment %}
+
+<section class="abp" data-section-id="{{ section.id }}">
+  <div class="abp-announcement">
+    <div class="abp-announcement__track">
+      <span>{{ section.settings.announcement }}</span>
+      <span>•</span>
+      <span>{{ section.settings.announcement_2 }}</span>
+      <span>•</span>
+      <span>{{ section.settings.announcement_3 }}</span>
+      <span>•</span>
+      <span>{{ section.settings.announcement_4 }}</span>
+    </div>
+  </div>
+
+  <header class="abp-header">
+    <div class="abp-header__inner">
+      <a class="abp-logo" href="{{ routes.root_url }}" aria-label="{{ shop.name }}">
+        {% if section.settings.logo != blank %}
+          {{ section.settings.logo | image_url: width: 420 | image_tag: loading: 'eager', widths: '180,260,360,420', class: 'abp-logo__img', alt: shop.name }}
+        {% else %}
+          <span>ALMAS</span><small>BEAUTY</small>
+        {% endif %}
+      </a>
+
+      <nav class="abp-nav" aria-label="Main navigation">
+        <a href="{{ routes.root_url }}">Home</a>
+        <a href="#abp-how">How It Works</a>
+        <a href="#abp-reviews">Reviews</a>
+        <a href="#abp-faq">FAQ</a>
+      </nav>
+
+      <a class="abp-cart" href="{{ routes.cart_url }}" aria-label="Cart">
+        <span>Cart</span><b>{{ cart.item_count }}</b>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="abp-container">
+      <div class="abp-hero">
+        <div class="abp-gallery">
+          <div class="abp-main-image">
+            {% assign first_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media %}
+            {% if first_media %}
+              {{ first_media.preview_image | image_url: width: 1200 | image_tag: loading: 'eager', class: 'abp-main-image__img', alt: first_media.alt | escape }}
+            {% else %}
+              <div class="abp-placeholder">ALMAS BEAUTY</div>
+            {% endif %}
+          </div>
+
+          {% if product.media.size > 1 %}
+            <div class="abp-thumbs" role="list">
+              {% for media in product.media limit: 8 %}
+                <button class="abp-thumb{% if forloop.first %} is-active{% endif %}" type="button"
+                        data-image="{{ media.preview_image | image_url: width: 1200 }}"
+                        data-alt="{{ media.alt | escape }}">
+                  {{ media.preview_image | image_url: width: 180 | image_tag: loading: 'lazy', alt: media.alt | escape }}
+                </button>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="abp-info">
+          <div class="abp-rating">
+            <span class="abp-stars">★★★★★</span>
+            <span>{{ section.settings.rating }} ({{ section.settings.review_count }}+ reviews)</span>
+          </div>
+
+          <h1>{{ product.title }}</h1>
+
+          <div class="abp-price-row">
+            <strong>{{ product.selected_or_first_available_variant.price | money }}</strong>
+            {% if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price %}
+              <del>{{ product.selected_or_first_available_variant.compare_at_price | money }}</del>
+              <em>{{ section.settings.discount_text }}</em>
+            {% endif %}
+          </div>
+
+          {% if section.settings.hero_subtitle != blank %}
+            <p class="abp-subtitle">{{ section.settings.hero_subtitle }}</p>
+          {% endif %}
+
+          <ul class="abp-benefits">
+            {% for block in section.blocks %}
+              {% if block.type == 'benefit' %}
+                <li {{ block.shopify_attributes }}>
+                  <span>✓</span>{{ block.settings.text }}
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+
+          <div class="abp-buybox">
+            {% if product.has_only_default_variant == false %}
+              {% for option in product.options_with_values %}
+                <fieldset class="abp-option">
+                  <legend>{{ option.name }}</legend>
+                  <div class="abp-option-grid">
+                    {% for value in option.values %}
+                      <button type="button" class="abp-option-btn{% if option.selected_value == value %} is-selected{% endif %}"
+                              data-option-index="{{ forloop.parentloop.index0 }}"
+                              data-option-value="{{ value | escape }}">
+                        {{ value }}
+                      </button>
+                    {% endfor %}
+                  </div>
+                </fieldset>
+              {% endfor %}
+            {% endif %}
+
+            <div class="abp-qty">
+              <button type="button" data-qty-minus aria-label="Decrease quantity">−</button>
+              <input type="number" id="abp-qty-{{ section.id }}" value="1" min="1" max="10" inputmode="numeric">
+              <button type="button" data-qty-plus aria-label="Increase quantity">+</button>
+            </div>
+
+            <button type="button" class="abp-atc" data-add-to-cart>
+              <span>{{ section.settings.button_text }}</span>
+              <b>{{ product.selected_or_first_available_variant.price | money }}</b>
+            </button>
+
+            <div class="abp-trust">
+              <span>🔒 Secure checkout</span>
+              <span>✓ Quality checked</span>
+              <span>🚚 Fast shipping</span>
+            </div>
+          </div>
+
+          {% if section.settings.guarantee != blank %}
+            <div class="abp-guarantee">
+              <strong>{{ section.settings.guarantee_title }}</strong>
+              <span>{{ section.settings.guarantee }}</span>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <section class="abp-strip" id="abp-how">
+        <div><strong>01</strong><span>Heat</span><p>Choose the temperature that suits your hair.</p></div>
+        <div><strong>02</strong><span>Brush</span><p>Glide through sections slowly and evenly.</p></div>
+        <div><strong>03</strong><span>Style</span><p>Enjoy a smoother, polished look in minutes.</p></div>
+      </section>
+
+      <section class="abp-story">
+        <div class="abp-story__copy">
+          <span class="abp-eyebrow">ALMAS BEAUTY</span>
+          <h2>Beautiful hair.<br><i>Made simple.</i></h2>
+          <p>{{ section.settings.story_text }}</p>
+        </div>
+        <div class="abp-story__card">
+          {% if section.settings.story_image != blank %}
+            {{ section.settings.story_image | image_url: width: 1000 | image_tag: loading: 'lazy', alt: 'ALMAS BEAUTY' }}
+          {% else %}
+            <div class="abp-story__placeholder">ALMAS<br><small>BEAUTY</small></div>
+          {% endif %}
+        </div>
+      </section>
+
+      <section class="abp-reviews" id="abp-reviews">
+        <div class="abp-section-head">
+          <span class="abp-eyebrow">REAL RESULTS</span>
+          <h2>Loved by women who want <i>more from their routine.</i></h2>
+          <p>Simple styling, clean design, and a polished finish.</p>
+        </div>
+        <div class="abp-review-grid">
+          {% for block in section.blocks %}
+            {% if block.type == 'review' %}
+              <article class="abp-review" {{ block.shopify_attributes }}>
+                <div class="abp-stars">★★★★★</div>
+                <p>“{{ block.settings.quote }}”</p>
+                <strong>{{ block.settings.name }}</strong>
+                <span>Verified customer</span>
+              </article>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </section>
+
+      <section class="abp-faq" id="abp-faq">
+        <div class="abp-section-head">
+          <span class="abp-eyebrow">FAQ</span>
+          <h2>Questions, answered.</h2>
+        </div>
+        {% for block in section.blocks %}
+          {% if block.type == 'faq' %}
+            <details {{ block.shopify_attributes }}>
+              <summary>{{ block.settings.question }}<span>+</span></summary>
+              <p>{{ block.settings.answer }}</p>
+            </details>
+          {% endif %}
+        {% endfor %}
+      </section>
+
+      <section class="abp-final">
+        <span class="abp-eyebrow">ALMAS BEAUTY</span>
+        <h2>Your everyday beauty ritual,<br><i>upgraded.</i></h2>
+        <a href="#abp-top" class="abp-final-btn" data-scroll-top>{{ section.settings.button_text }}</a>
+      </section>
+    </div>
+  </main>
+</section>
+
+<style>
+  .abp{--purple:#5b2aa6;--purple-dark:#32115f;--lavender:#f3effb;--ink:#17131d;--muted:#706a78;--line:#e9e3ef;background:#fff;color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+  .abp *{box-sizing:border-box}.abp a{text-decoration:none;color:inherit}.abp button{font:inherit}
+  .abp-announcement{background:var(--purple);color:#fff;overflow:hidden;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+  .abp-announcement__track{min-height:36px;display:flex;align-items:center;justify-content:center;gap:15px;white-space:nowrap;padding:0 16px}
+  .abp-header{border-bottom:1px solid var(--line);background:#fff}.abp-header__inner{height:74px;max-width:1220px;margin:auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+  .abp-logo{display:flex;align-items:baseline;gap:6px;font-weight:900;letter-spacing:.12em}.abp-logo span{font-size:22px}.abp-logo small{font-size:9px;letter-spacing:.24em;color:var(--purple)}.abp-logo__img{max-height:42px;width:auto}
+  .abp-nav{display:flex;gap:36px;font-size:14px;color:#3f3946}.abp-nav a:hover{color:var(--purple)}
+  .abp-cart{display:flex;gap:8px;align-items:center;font-size:14px}.abp-cart b{min-width:22px;height:22px;border-radius:50%;background:var(--purple);color:#fff;display:grid;place-items:center;font-size:11px}
+  .abp-container{max-width:1220px;margin:auto;padding:0 24px}.abp-hero{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(390px,.92fr);gap:70px;padding:48px 0 72px}
+  .abp-main-image{background:var(--lavender);border-radius:20px;aspect-ratio:1/1;overflow:hidden;display:grid;place-items:center}.abp-main-image__img{width:100%;height:100%;object-fit:cover}.abp-placeholder{font-size:40px;font-weight:900;color:var(--purple);letter-spacing:.12em}
+  .abp-thumbs{display:flex;gap:10px;margin-top:12px;overflow:auto}.abp-thumb{border:1px solid var(--line);padding:0;border-radius:10px;background:#fff;overflow:hidden;width:72px;height:72px;flex:0 0 72px;cursor:pointer}.abp-thumb.is-active{border:2px solid var(--purple)}.abp-thumb img{width:100%;height:100%;object-fit:cover}
+  .abp-info{padding-top:8px}.abp-rating{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);margin-bottom:14px}.abp-stars{color:#f2b01e;letter-spacing:2px}.abp-info h1{font-size:42px;line-height:1.08;margin:0 0 18px;letter-spacing:-.03em}.abp-price-row{display:flex;align-items:center;gap:13px;margin-bottom:12px}.abp-price-row strong{font-size:31px}.abp-price-row del{color:#98919f;font-size:18px}.abp-price-row em{font-style:normal;color:var(--purple);font-weight:800;font-size:13px}
+  .abp-subtitle{font-size:15px;line-height:1.65;color:var(--muted);margin:0 0 20px}.abp-benefits{list-style:none;padding:0;margin:0 0 22px;display:grid;gap:10px}.abp-benefits li{font-size:14px;display:flex;gap:10px;line-height:1.4}.abp-benefits li span{color:var(--purple);font-weight:900}
+  .abp-buybox{border:1px solid var(--line);border-radius:18px;padding:18px;background:#fff}.abp-option{border:0;padding:0;margin:0 0 16px}.abp-option legend{font-size:13px;font-weight:800;margin-bottom:8px}.abp-option-grid{display:flex;gap:8px;flex-wrap:wrap}.abp-option-btn{border:1px solid #d9d0e2;background:#fff;border-radius:9px;padding:9px 14px;cursor:pointer}.abp-option-btn.is-selected{border-color:var(--purple);background:var(--lavender);color:var(--purple);font-weight:800}
+  .abp-qty{display:flex;width:125px;height:46px;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:10px}.abp-qty button{width:38px;border:0;background:#faf8fc;cursor:pointer}.abp-qty input{width:49px;border:0;text-align:center;outline:0}
+  .abp-atc{width:100%;border:0;border-radius:12px;background:var(--purple);color:#fff;min-height:56px;padding:0 18px;display:flex;align-items:center;justify-content:space-between;font-weight:800;cursor:pointer;box-shadow:0 8px 22px rgba(91,42,166,.2)}.abp-atc:hover{background:var(--purple-dark)}.abp-atc b{font-size:14px}
+  .abp-trust{display:flex;justify-content:space-between;gap:8px;margin-top:13px;font-size:10px;color:var(--muted);flex-wrap:wrap}.abp-guarantee{margin-top:14px;padding:14px 16px;border-radius:12px;background:var(--lavender);display:flex;gap:8px;flex-direction:column}.abp-guarantee strong{font-size:13px}.abp-guarantee span{font-size:12px;color:var(--muted)}
+  .abp-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr);padding:30px 0;margin-bottom:90px}.abp-strip div{padding:0 30px;border-right:1px solid var(--line)}.abp-strip div:last-child{border-right:0}.abp-strip strong{color:var(--purple);font-size:12px}.abp-strip span{display:block;font-weight:800;margin:6px 0}.abp-strip p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}
+  .abp-story{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-bottom:110px}.abp-eyebrow{color:var(--purple);font-size:11px;font-weight:900;letter-spacing:.18em}.abp-story h2,.abp-section-head h2,.abp-final h2{font-size:44px;line-height:1.08;letter-spacing:-.035em;margin:12px 0 18px}.abp-story h2 i,.abp-section-head h2 i,.abp-final h2 i{font-family:Georgia,serif;font-weight:400}.abp-story p{color:var(--muted);font-size:15px;line-height:1.8;max-width:520px}.abp-story__card{background:var(--lavender);border-radius:20px;overflow:hidden;aspect-ratio:1/1}.abp-story__card img{width:100%;height:100%;object-fit:cover}.abp-story__placeholder{height:100%;display:grid;place-items:center;text-align:center;color:var(--purple);font-size:52px;font-weight:900;line-height:.9;letter-spacing:.1em}.abp-story__placeholder small{font-size:12px;letter-spacing:.35em}
+  .abp-reviews{padding:80px 0 95px;border-top:1px solid var(--line)}.abp-section-head{text-align:center;max-width:720px;margin:0 auto 40px}.abp-section-head p{color:var(--muted)}.abp-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.abp-review{border:1px solid var(--line);border-radius:16px;padding:24px}.abp-review p{font-size:15px;line-height:1.7;min-height:80px}.abp-review strong{display:block;font-size:13px}.abp-review>span{font-size:11px;color:var(--muted)}
+  .abp-faq{max-width:820px;margin:0 auto;padding:70px 0 100px}.abp-faq details{border-top:1px solid var(--line);padding:20px 0}.abp-faq details:last-child{border-bottom:1px solid var(--line)}.abp-faq summary{cursor:pointer;list-style:none;font-weight:800;display:flex;justify-content:space-between}.abp-faq summary::-webkit-details-marker{display:none}.abp-faq summary span{color:var(--purple);font-size:20px}.abp-faq details p{color:var(--muted);font-size:14px;line-height:1.7;max-width:700px}
+  .abp-final{background:var(--lavender);border-radius:24px;text-align:center;padding:80px 24px;margin-bottom:70px}.abp-final-btn{display:inline-flex;background:var(--purple);color:#fff!important;border-radius:12px;padding:15px 28px;font-weight:800}
+  @media(max-width:900px){.abp-nav{display:none}.abp-header__inner{height:66px}.abp-hero{grid-template-columns:1fr;gap:34px;padding-top:25px}.abp-info h1{font-size:34px}.abp-story{grid-template-columns:1fr;gap:35px}.abp-story__card{order:-1}.abp-review-grid{grid-template-columns:1fr}.abp-strip{margin-bottom:65px}.abp-story h2,.abp-section-head h2,.abp-final h2{font-size:36px}}
+  @media(max-width:600px){.abp-container{padding:0 15px}.abp-announcement__track{justify-content:flex-start;font-size:9px}.abp-header__inner{padding:0 15px}.abp-logo span{font-size:18px}.abp-cart span{display:none}.abp-hero{padding-bottom:45px}.abp-main-image{border-radius:14px}.abp-info h1{font-size:30px}.abp-price-row strong{font-size:27px}.abp-strip{grid-template-columns:1fr;gap:20px;padding:22px 0}.abp-strip div{border-right:0;border-bottom:1px solid var(--line);padding:0 4px 18px}.abp-strip div:last-child{border-bottom:0;padding-bottom:0}.abp-story{margin-bottom:70px}.abp-final{padding:55px 18px;margin-bottom:35px}.abp-trust{justify-content:flex-start}.abp-buybox{padding:14px}}
+</style>
+
+<script>
+(() => {
+  const root = document.querySelector('.abp[data-section-id="{{ section.id }}"]');
+  if (!root) return;
+
+  const variantData = {{ product.variants | json }};
+  let selected = {{ product.selected_or_first_available_variant.id | json }};
+
+  const money = (cents) => {
+    try { return new Intl.NumberFormat('{{ localization.language.iso_code }}', {style:'currency', currency:'{{ cart.currency.iso_code }}'}).format(cents/100); }
+    catch(e){ return '$' + (cents/100).toFixed(2); }
+  };
+
+  function currentVariant() {
+    const buttons = [...root.querySelectorAll('.abp-option-btn')];
+    const values = {};
+    buttons.filter(b => b.classList.contains('is-selected')).forEach(b => {
+      values[b.dataset.optionIndex] = b.dataset.optionValue;
+    });
+    const found = variantData.find(v => v.options.every((o,i) => values[i] === undefined || values[i] === o));
+    return found || variantData.find(v => v.id === selected) || variantData[0];
+  }
+
+  root.querySelectorAll('.abp-option-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const index = btn.dataset.optionIndex;
+      root.querySelectorAll('.abp-option-btn[data-option-index="'+index+'"]').forEach(b => b.classList.remove('is-selected'));
+      btn.classList.add('is-selected');
+      const v = currentVariant();
+      if (v) {
+        selected = v.id;
+        const price = root.querySelector('.abp-atc b');
+        if (price) price.textContent = money(v.price);
+        if (v.featured_image && v.featured_image.src) {
+          const img = root.querySelector('.abp-main-image__img');
+          if (img) img.src = v.featured_image.src;
+        }
+      }
+    });
+  });
+
+  const qty = root.querySelector('.abp-qty input');
+  root.querySelector('[data-qty-minus]')?.addEventListener('click', () => qty.value = Math.max(1, Number(qty.value)-1));
+  root.querySelector('[data-qty-plus]')?.addEventListener('click', () => qty.value = Math.min(10, Number(qty.value)+1));
+
+  root.querySelectorAll('.abp-thumb').forEach(t => t.addEventListener('click', () => {
+    const img = root.querySelector('.abp-main-image__img');
+    if (img) { img.src = t.dataset.image; img.alt = t.dataset.alt || ''; }
+    root.querySelectorAll('.abp-thumb').forEach(x => x.classList.remove('is-active'));
+    t.classList.add('is-active');
+  }));
+
+  root.querySelector('[data-add-to-cart]')?.addEventListener('click', async () => {
+    const v = currentVariant();
+    if (!v || !v.available) { alert('This variant is currently unavailable.'); return; }
+    const btn = root.querySelector('[data-add-to-cart]');
+    const old = btn.innerHTML;
+    btn.disabled = true; btn.innerHTML = '<span>Adding…</span>';
+    try {
+      const res = await fetch('/cart/add.js', {
+        method:'POST',
+        headers:{'Content-Type':'application/json','Accept':'application/json'},
+        body:JSON.stringify({items:[{id:v.id, quantity:Math.max(1, Number(qty.value)||1)}]})
+      });
+      if (!res.ok) throw new Error();
+      window.location.href = '{{ routes.cart_url }}';
+    } catch(e) {
+      btn.disabled = false; btn.innerHTML = old;
+      alert('Could not add the product. Please try again.');
+    }
+  });
+
+  root.querySelectorAll('[data-scroll-top]').forEach(a => a.addEventListener('click', e => {
+    e.preventDefault(); window.scrollTo({top:0, behavior:'smooth'});
+  }));
+})();
+</script>
+
+{% schema %}
+{
+  "name": "ALMAS Beauty Product",
+  "settings": [
+    {"type":"image_picker","id":"logo","label":"Logo"},
+    {"type":"text","id":"announcement","label":"Announcement 1","default":"FREE SHIPPING"},
+    {"type":"text","id":"announcement_2","label":"Announcement 2","default":"SECURE CHECKOUT"},
+    {"type":"text","id":"announcement_3","label":"Announcement 3","default":"LIMITED-TIME OFFER"},
+    {"type":"text","id":"announcement_4","label":"Announcement 4","default":"QUALITY GUARANTEE"},
+    {"type":"text","id":"rating","label":"Rating","default":"4.9"},
+    {"type":"text","id":"review_count","label":"Review count","default":"500"},
+    {"type":"text","id":"discount_text","label":"Discount text","default":"SPECIAL OFFER"},
+    {"type":"textarea","id":"hero_subtitle","label":"Hero subtitle","default":"A clean, modern beauty tool designed to make your daily styling routine faster and easier."},
+    {"type":"text","id":"button_text","label":"Add to cart button","default":"ADD TO CART — SHOP NOW"},
+    {"type":"text","id":"guarantee_title","label":"Guarantee title","default":"ALMAS BEAUTY QUALITY PROMISE"},
+    {"type":"textarea","id":"guarantee","label":"Guarantee text","default":"Designed with a simple, elegant experience from product to delivery."},
+    {"type":"image_picker","id":"story_image","label":"Story image"},
+    {"type":"textarea","id":"story_text","label":"Story text","default":"ALMAS BEAUTY brings together elegant design and practical beauty tools for a simple routine you can enjoy every day."}
+  ],
+  "blocks": [
+    {"type":"benefit","name":"Benefit","limit":6,"settings":[{"type":"text","id":"text","label":"Benefit","default":"Fast and easy everyday styling"}]},
+    {"type":"review","name":"Review","limit":6,"settings":[{"type":"text","id":"name","label":"Customer name","default":"Verified Customer"},{"type":"textarea","id":"quote","label":"Review","default":"Beautiful design and very easy to use."}]},
+    {"type":"faq","name":"FAQ","limit":8,"settings":[{"type":"text","id":"question","label":"Question","default":"How do I use the product?"},{"type":"textarea","id":"answer","label":"Answer","default":"Follow the instructions included with your product and use the recommended temperature for your hair type."}]}
+  ],
+  "presets":[
+    {"name":"ALMAS Beauty Product","blocks":[
+      {"type":"benefit","settings":{"text":"Fast, simple everyday styling"}},
+      {"type":"benefit","settings":{"text":"Adjustable heat for different hair types"}},
+      {"type":"benefit","settings":{"text":"Digital temperature display"}},
+      {"type":"benefit","settings":{"text":"Clean, compact and easy to handle"}},
+      {"type":"review","settings":{"name":"Sarah","quote":"It made my morning routine much faster."}},
+      {"type":"review","settings":{"name":"Maya","quote":"The design is beautiful and simple to use."}},
+      {"type":"review","settings":{"name":"Lina","quote":"Very happy with the result and the finish."}},
+      {"type":"faq","settings":{"question":"What temperatures does it support?","answer":"The ALMAS BEAUTY brush is designed with adjustable heat control. Set the temperature according to your hair type and styling needs."}},
+      {"type":"faq","settings":{"question":"How long does styling take?","answer":"The exact time depends on hair length and thickness, but the brush is designed for quick everyday styling."}},
+      {"type":"faq","settings":{"question":"What colors are available?","answer":"Pink, purple, white, gold and navy blue."}}
+    ]}
+  ]
+}
+{% endschema %}
