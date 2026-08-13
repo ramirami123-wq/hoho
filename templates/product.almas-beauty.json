@@ -12,33 +12,102 @@
     "main": {
       "type": "almas-beauty-product",
       "blocks": {
-        "benefit_1": {"type":"benefit","settings":{"text":"Fast, simple everyday styling"}},
-        "benefit_2": {"type":"benefit","settings":{"text":"Adjustable heat for different hair types"}},
-        "benefit_3": {"type":"benefit","settings":{"text":"Digital temperature display"}},
-        "benefit_4": {"type":"benefit","settings":{"text":"Clean, compact and easy to handle"}},
-        "review_1": {"type":"review","settings":{"name":"Sarah","quote":"It made my morning routine much faster."}},
-        "review_2": {"type":"review","settings":{"name":"Maya","quote":"The design is beautiful and simple to use."}},
-        "review_3": {"type":"review","settings":{"name":"Lina","quote":"Very happy with the result and the finish."}},
-        "faq_1": {"type":"faq","settings":{"question":"What temperatures does it support?","answer":"The ALMAS BEAUTY brush is designed with adjustable heat control. Set the temperature according to your hair type and styling needs."}},
-        "faq_2": {"type":"faq","settings":{"question":"How long does styling take?","answer":"The exact time depends on hair length and thickness, but the brush is designed for quick everyday styling."}},
-        "faq_3": {"type":"faq","settings":{"question":"What colors are available?","answer":"Pink, purple, white, gold and navy blue."}}
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Fast, simple everyday styling"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Adjustable heat for different hair types"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Digital temperature display"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Clean, compact and easy to handle"
+          }
+        },
+        "review_1": {
+          "type": "review",
+          "settings": {
+            "name": "Sarah",
+            "quote": "It made my morning routine much faster."
+          }
+        },
+        "review_2": {
+          "type": "review",
+          "settings": {
+            "name": "Maya",
+            "quote": "The design is beautiful and simple to use."
+          }
+        },
+        "review_3": {
+          "type": "review",
+          "settings": {
+            "name": "Lina",
+            "quote": "Very happy with the result and the finish."
+          }
+        },
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "What temperatures does it support?",
+            "answer": "The ALMAS BEAUTY brush is designed with adjustable heat control. Set the temperature according to your hair type and styling needs."
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "question": "How long does styling take?",
+            "answer": "The exact time depends on hair length and thickness, but the brush is designed for quick everyday styling."
+          }
+        },
+        "faq_3": {
+          "type": "faq",
+          "settings": {
+            "question": "What colors are available?",
+            "answer": "Pink, purple, white, gold and navy blue."
+          }
+        }
       },
-      "block_order": ["benefit_1","benefit_2","benefit_3","benefit_4","review_1","review_2","review_3","faq_1","faq_2","faq_3"],
+      "block_order": [
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4",
+        "review_1",
+        "review_2",
+        "review_3",
+        "faq_1",
+        "faq_2",
+        "faq_3"
+      ],
       "settings": {
-        "announcement":"FREE SHIPPING",
-        "announcement_2":"SECURE CHECKOUT",
-        "announcement_3":"LIMITED-TIME OFFER",
-        "announcement_4":"QUALITY GUARANTEE",
-        "rating":"4.9",
-        "review_count":"500",
-        "discount_text":"SPECIAL OFFER",
-        "hero_subtitle":"A clean, modern beauty tool designed to make your daily styling routine faster and easier.",
-        "button_text":"ADD TO CART — SHOP NOW",
-        "guarantee_title":"ALMAS BEAUTY QUALITY PROMISE",
-        "guarantee":"Designed with a simple, elegant experience from product to delivery.",
-        "story_text":"ALMAS BEAUTY brings together elegant design and practical beauty tools for a simple routine you can enjoy every day."
+        "announcement": "",
+        "announcement_2": "",
+        "announcement_3": "",
+        "announcement_4": "",
+        "rating": "4.9",
+        "review_count": "500",
+        "discount_text": "SPECIAL OFFER",
+        "hero_subtitle": "A clean, modern beauty tool designed to make your daily styling routine faster and easier.",
+        "button_text": "ADD TO CART — SHOP NOW",
+        "guarantee_title": "ALMAS BEAUTY QUALITY PROMISE",
+        "guarantee": "Designed with a simple, elegant experience from product to delivery.",
+        "story_text": "ALMAS BEAUTY brings together elegant design and practical beauty tools for a simple routine you can enjoy every day."
       }
     }
   },
-  "order":["main"]
+  "order": [
+    "main"
+  ]
 }

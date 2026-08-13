@@ -47,7 +47,7 @@
         "direction": "left",
         "speed": 1.6,
         "colors_text": "#ffffff",
-        "colors_background": "#f89db5",
+        "colors_background": "#6321AF",
         "gradient_background": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -134,21 +134,11 @@
       "disabled": true,
       "name": "Benefits table",
       "settings": {}
-    },
-    "1782624764748bcacf": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true,
-        "show_divider": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "announcement-bar",
     "header",
-    "blocks_UxVChz",
-    "1782624764748bcacf"
+    "blocks_UxVChz"
   ]
 }
